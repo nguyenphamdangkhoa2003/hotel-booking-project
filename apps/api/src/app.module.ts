@@ -9,7 +9,5 @@ import { AuthModule } from './modules/auth/auth.module';
 
 @Module({
   imports: [HealthModule, PrismaModule, UserModule, AuthModule],
-  controllers: [AppController],
-  providers: [AppService, PrismaService],
 })
 export class AppModule {}
