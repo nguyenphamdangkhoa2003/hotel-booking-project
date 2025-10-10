@@ -76,6 +76,7 @@ export class AuthController {
     return this.auth.requestPasswordReset(dto.email);
   }
 
+  @Public()
   @Post('reset-password')
   @ApiOkResponse({ description: 'Reset password using email token' })
   async resetPassword(@Body() dto: ResetPasswordDto) {
