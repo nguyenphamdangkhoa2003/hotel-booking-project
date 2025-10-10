@@ -1,0 +1,9 @@
+{
+    "dashboard": {
+        "title": "Dashboard",
+        "menu": {
+            "overview": "Overview",
+            "hotels": "Hotels"
+        }
+    }
+}

@@ -20,3 +20,2653 @@
  ✓ Compiled /login in 3.5s
  GET /login 200 in 4401ms
  ✓ Compiled /favicon.ico in 322ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 730ms
+ ✓ Compiled / in 355ms
+ GET / 200 in 541ms
+ ✓ Compiled in 95ms
+ ✓ Compiled in 69ms
+ ✓ Compiled in 71ms
+ ✓ Compiled in 62ms
+ ✓ Compiled in 72ms
+ ✓ Compiled in 86ms
+ ✓ Compiled in 86ms
+ ✓ Compiled in 64ms
+ ✓ Compiled /login in 96ms
+ GET /login 200 in 350ms
+ ✓ Compiled in 81ms
+ ✓ Compiled in 69ms
+ ✓ Compiled in 61ms
+ ✓ Compiled in 76ms
+ ✓ Compiled in 63ms
+ ✓ Compiled in 74ms
+ ✓ Compiled in 112ms
+ ✓ Compiled in 113ms
+ ✓ Compiled in 92ms
+ ✓ Compiled in 73ms
+ ✓ Compiled in 66ms
+ ✓ Compiled in 60ms
+ ✓ Compiled in 65ms
+ GET /login 200 in 632ms
+ ✓ Compiled /_not-found/page in 378ms
+ GET /auth/callback 404 in 607ms
+ GET /login 200 in 164ms
+ ✓ Compiled in 62ms
+ ✓ Compiled in 58ms
+ ✓ Compiled in 64ms
+ ✓ Compiled in 64ms
+ ✓ Compiled in 95ms
+ ✓ Compiled in 52ms
+ ✓ Compiled /login in 39ms
+ GET /login 200 in 167ms
+ GET / 200 in 118ms
+ ✓ Compiled in 67ms
+ GET /login 200 in 374ms
+ GET /login 200 in 212ms
+ GET /login 200 in 243ms
+ ✓ Compiled /register in 410ms
+ GET /register 200 in 542ms
+ ✓ Compiled in 97ms
+ ✓ Compiled /register in 85ms
+ GET /register 200 in 652ms
+ GET /register 200 in 671ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 386ms
+ ✓ Compiled /register in 42ms
+ GET /register 200 in 246ms
+ ✓ Compiled in 69ms
+ ✓ Compiled in 69ms
+ ✓ Compiled in 58ms
+ ✓ Compiled in 69ms
+ ✓ Compiled in 83ms
+ ✓ Compiled in 82ms
+ ✓ Compiled in 57ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 75ms
+ GET /register 200 in 672ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 373ms
+ ✓ Compiled in 70ms
+ ✓ Compiled in 83ms
+ ✓ Compiled in 90ms
+ ✓ Compiled /register in 85ms
+ GET /register 200 in 365ms
+ ✓ Compiled in 71ms
+ ✓ Compiled in 58ms
+ ✓ Compiled in 69ms
+ ✓ Compiled in 81ms
+ ✓ Compiled in 59ms
+ ✓ Compiled in 61ms
+ ✓ Compiled in 72ms
+ ✓ Compiled in 88ms
+ ✓ Compiled in 75ms
+ ✓ Compiled in 71ms
+ GET /login 200 in 141ms
+ GET /register 200 in 196ms
+ ✓ Compiled in 63ms
+ ✓ Compiled in 80ms
+ ✓ Compiled in 93ms
+ ✓ Compiled in 78ms
+ ✓ Compiled in 70ms
+ ✓ Compiled in 77ms
+ ✓ Compiled /register in 107ms
+ GET /register 200 in 327ms
+ ✓ Compiled in 62ms
+ ✓ Compiled in 73ms
+ ✓ Compiled in 57ms
+ ✓ Compiled in 70ms
+ ✓ Compiled in 65ms
+ ✓ Compiled in 64ms
+ ✓ Compiled in 58ms
+ ✓ Compiled in 78ms
+ ✓ Compiled in 54ms
+ ✓ Compiled in 70ms
+ ✓ Compiled in 67ms
+ ✓ Compiled in 71ms
+ ✓ Compiled in 55ms
+ ✓ Compiled in 66ms
+ ✓ Compiled in 58ms
+ ✓ Compiled in 58ms
+ ✓ Compiled in 65ms
+ ✓ Compiled in 58ms
+ ✓ Compiled in 61ms
+ ✓ Compiled in 57ms
+ ✓ Compiled in 68ms
+ ✓ Compiled in 68ms
+ ✓ Compiled in 104ms
+ ✓ Compiled in 73ms
+ ✓ Compiled in 65ms
+ ✓ Compiled in 59ms
+ ✓ Compiled in 59ms
+ ✓ Compiled in 88ms
+ ✓ Compiled in 76ms
+ ✓ Compiled in 71ms
+ ✓ Compiled in 68ms
+ ✓ Compiled in 78ms
+ POST /v1/auth/register 404 in 388ms
+ POST /v1/auth/register 404 in 188ms
+ ✓ Compiled in 124ms
+ ✓ Compiled /register in 72ms
+ GET /register 200 in 341ms
+ ✓ Compiled in 154ms
+ ✓ Compiled /register in 78ms
+ GET /register 200 in 339ms
+ GET /register 200 in 608ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 426ms
+ ✓ Compiled in 75ms
+ GET /register 200 in 681ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 623ms
+ GET /register 200 in 208ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 424ms
+ GET /login 200 in 312ms
+ GET /login 200 in 284ms
+ GET /login 200 in 130ms
+ ✓ Compiled /forgot-password in 398ms
+ GET /forgot-password 200 in 693ms
+ GET /forgot-password 200 in 146ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 409ms
+ ✓ Compiled in 330ms
+ ✓ Compiled /forgot-password in 69ms
+ GET /forgot-password 200 in 279ms
+ ✓ Compiled in 96ms
+ ✓ Compiled /forgot-password in 54ms
+ GET /forgot-password 200 in 221ms
+ ✓ Compiled in 165ms
+ ✓ Compiled /forgot-password in 48ms
+ GET /forgot-password 200 in 231ms
+ ✓ Compiled in 80ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 404 in 584ms
+ ✓ Compiled in 119ms
+ GET /forgot-password 200 in 319ms
+ ✓ Compiled /reset-password in 489ms
+ ⨯ [Error: The default export is not a React Component in "/reset-password/page"]
+ ⨯ [Error: The default export is not a React Component in "/reset-password/page"] {
+  page: '/reset-password'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 1688ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 3218ms
+ ⨯ [Error: The default export is not a React Component in "/reset-password/page"]
+ ⨯ [Error: The default export is not a React Component in "/reset-password/page"] {
+  page: '/reset-password'
+}
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 662ms
+ GET /favicon.ico 200 in 330ms
+ ⨯ ./apps/web/app/(auth)/reset-password/page.tsx:1:1
+Module not found: Can't resolve '@/components/auth/reset-password-form'
+[0m[31m[1m>[22m[39m[90m 1 |[39m [36mimport[39m [33mResetPasswordForm[39m [36mfrom[39m [32m'@/components/auth/reset-password-form'[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 2 |[39m
+ [90m 3 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m [33mResetPasswordPage[39m() {
+ [90m 4 |[39m     [36mreturn[39m ([0m
+
+Import map: aliased to relative './components/auth/reset-password-form' inside of [project]/apps/web
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ⨯ ./apps/web/app/(auth)/reset-password/page.tsx:1:1
+Module not found: Can't resolve '@/components/auth/reset-password-form'
+[0m[31m[1m>[22m[39m[90m 1 |[39m [36mimport[39m [33mResetPasswordForm[39m [36mfrom[39m [32m'@/components/auth/reset-password-form'[39m[33m;[39m
+ [90m   |[39m [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 2 |[39m
+ [90m 3 |[39m [36mexport[39m [36mdefault[39m [36mfunction[39m [33mResetPasswordPage[39m() {
+ [90m 4 |[39m     [36mreturn[39m ([0m
+
+Import map: aliased to relative './components/auth/reset-password-form' inside of [project]/apps/web
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+ ✓ Compiled in 71ms
+ ✓ Compiled /reset-password in 65ms
+ ⨯ ReferenceError: ResetPasswordForm is not defined
+    at ResetPasswordPage (app\(auth)\reset-password\page.tsx:5:14)
+  3 |     return (
+  4 |         <section className="flex min-h-screen bg-zinc-50 px-4 py-16 md:py-32 dark:bg-transparent">
+> 5 |             <ResetPasswordForm />
+    |              ^
+  6 |         </section>
+  7 |     );
+  8 | } {
+  digest: '1212532691'
+}
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 535ms
+ GET /forgot-password 200 in 537ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 347ms
+ GET /favicon.ico 200 in 323ms
+ ✓ Compiled in 61ms
+ ✓ Compiled /reset-password in 63ms
+ ⨯ ReferenceError: ResetPasswordForm is not defined
+    at ResetPasswordPage (app\(auth)\reset-password\page.tsx:4:14)
+  2 |     return (
+  3 |         <section className="flex min-h-screen bg-zinc-50 px-4 py-16 md:py-32 dark:bg-transparent">
+> 4 |             <ResetPasswordForm />
+    |              ^
+  5 |         </section>
+  6 |     );
+  7 | } {
+  digest: '1212532691'
+}
+ GET /forgot-password 200 in 770ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 770ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 324ms
+ GET /favicon.ico 200 in 311ms
+ ✓ Compiled in 157ms
+ ✓ Compiled /reset-password in 132ms
+ GET /forgot-password 200 in 888ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 200 in 897ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 301ms
+ GET / 200 in 276ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 200 in 223ms
+ ✓ Compiled in 136ms
+ ✓ Compiled /reset-password in 78ms
+ GET /forgot-password 200 in 327ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 200 in 334ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 200 in 131ms
+ ✓ Compiled in 59ms
+ ✓ Compiled in 64ms
+ ✓ Compiled in 58ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 200 in 655ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 564ms
+ GET /_next/internal/helpers.ts 404 in 302ms
+ GET /login 200 in 254ms
+ ✓ Compiled /forgot-password in 63ms
+ ✓ Compiled in 576ms
+ GET /forgot-password 200 in 537ms
+ GET /forgot-password 200 in 326ms
+ ✓ Compiled /login in 373ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 200 in 1653ms
+ GET /login 200 in 1673ms
+ ⨯ Error: Could not parse module '[project]/apps/web/app/layout.tsx'
+
+Expression expected
+    at __TURBOPACK__module__evaluation__ (K:\hotel-booking-project\apps\web\.next\server\chunks\ssr\[root-of-the-server]__19c38c79._.js:11:47)
+    at Object.<anonymous> (K:\hotel-booking-project\apps\web\.next\server\app\(auth)\forgot-password\page.js:13:3) {
+  code: 'MODULE_UNPARSABLE',
+  page: '/forgot-password'
+}
+ GET /login 200 in 1603ms
+ ⨯ ./apps/web/app/layout.tsx:38:27
+Parsing ecmascript source code failed
+[0m [90m 36 |[39m }
+ [90m 37 |[39m [33m<[39m[33mProviders[39m[33m>[39m{children}[33m<[39m[33m/[39m[33mProviders[39m[33m>[39m
+[31m[1m>[22m[39m[90m 38 |[39m                 [33m<[39m[33mToaster[39m [33m/[39m[33m>[39m
+ [90m    |[39m                           [31m[1m^[22m[39m[0m
+
+Expression expected
+
+
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 200 in 1619ms
+ ⨯ ./apps/web/app/layout.tsx:38:27
+Parsing ecmascript source code failed
+[0m [90m 36 |[39m }
+ [90m 37 |[39m [33m<[39m[33mProviders[39m[33m>[39m{children}[33m<[39m[33m/[39m[33mProviders[39m[33m>[39m
+[31m[1m>[22m[39m[90m 38 |[39m                 [33m<[39m[33mToaster[39m [33m/[39m[33m>[39m
+ [90m    |[39m                           [31m[1m^[22m[39m[0m
+
+Expression expected
+
+
+ ⨯ ./apps/web/app/layout.tsx:38:27
+Parsing ecmascript source code failed
+[0m [90m 36 |[39m }
+ [90m 37 |[39m [33m<[39m[33mProviders[39m[33m>[39m{children}[33m<[39m[33m/[39m[33mProviders[39m[33m>[39m
+[31m[1m>[22m[39m[90m 38 |[39m                 [33m<[39m[33mToaster[39m [33m/[39m[33m>[39m
+ [90m    |[39m                           [31m[1m^[22m[39m[0m
+
+Expression expected
+
+
+ GET /forgot-password 500 in 1939ms
+ GET /forgot-password 500 in 1904ms
+ GET /favicon.ico?favicon.0b3bf435.ico 500 in 160ms
+ GET /favicon.ico?favicon.0b3bf435.ico 500 in 102ms
+ GET /favicon.ico 500 in 107ms
+ ✓ Compiled in 81ms
+ ✓ Compiled in 136ms
+ ✓ Compiled /forgot-password in 102ms
+ ⨯ ReferenceError: Sidebar is not defined
+    at RootLayout (app\layout.tsx:30:8)
+  28 |     return (
+  29 |         <section className="flex min-h-screen bg-zinc-50 dark:bg-zinc-900">
+> 30 |       <Sidebar />
+     |        ^
+  31 |       <div className="flex flex-col flex-1">
+  32 |         <Navbar />
+  33 |         <div className="p-6 space-y-4"> {
+  digest: '94190394'
+}
+ GET /forgot-password 500 in 620ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 200 in 617ms
+ GET /login 200 in 627ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 200 in 261ms
+ GET /login 200 in 333ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 200 in 254ms
+ GET /login 200 in 357ms
+ GET /favicon.ico 200 in 402ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 899ms
+ ⨯ ReferenceError: Sidebar is not defined
+    at RootLayout (app\layout.tsx:30:14)
+  28 |     return (
+  29 |         <section className="flex min-h-screen bg-zinc-50 dark:bg-zinc-900">
+> 30 |             <Sidebar />
+     |              ^
+  31 |             <div className="flex flex-col flex-1">
+  32 |                 <Navbar />
+  33 |                 <div className="p-6 space-y-4"> {
+  digest: '3128491836'
+}
+ ○ Compiling /login ...
+ ⨯ ReferenceError: Sidebar is not defined
+    at RootLayout (app\layout.tsx:30:14)
+  28 |     return (
+  29 |         <section className="flex min-h-screen bg-zinc-50 dark:bg-zinc-900">
+> 30 |             <Sidebar />
+     |              ^
+  31 |             <div className="flex flex-col flex-1">
+  32 |                 <Navbar />
+  33 |                 <div className="p-6 space-y-4"> {
+  digest: '3128491836'
+}
+ ⨯ ReferenceError: Sidebar is not defined
+    at RootLayout (app\layout.tsx:30:14)
+  28 |     return (
+  29 |         <section className="flex min-h-screen bg-zinc-50 dark:bg-zinc-900">
+> 30 |             <Sidebar />
+     |              ^
+  31 |             <div className="flex flex-col flex-1">
+  32 |                 <Navbar />
+  33 |                 <div className="p-6 space-y-4"> {
+  digest: '3128491836'
+}
+ ✓ Compiled /login in 1050ms
+ ⨯ ReferenceError: Sidebar is not defined
+    at RootLayout (app\layout.tsx:30:14)
+  28 |     return (
+  29 |         <section className="flex min-h-screen bg-zinc-50 dark:bg-zinc-900">
+> 30 |             <Sidebar />
+     |              ^
+  31 |             <div className="flex flex-col flex-1">
+  32 |                 <Navbar />
+  33 |                 <div className="p-6 space-y-4"> {
+  digest: '3128491836'
+}
+ GET /login 200 in 1523ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 200 in 1900ms
+ ⨯ ReferenceError: Sidebar is not defined
+    at RootLayout (app\layout.tsx:30:14)
+  28 |     return (
+  29 |         <section className="flex min-h-screen bg-zinc-50 dark:bg-zinc-900">
+> 30 |             <Sidebar />
+     |              ^
+  31 |             <div className="flex flex-col flex-1">
+  32 |                 <Navbar />
+  33 |                 <div className="p-6 space-y-4"> {
+  digest: '3128491836'
+}
+ ⨯ ReferenceError: Sidebar is not defined
+    at RootLayout (app\layout.tsx:30:14)
+  28 |     return (
+  29 |         <section className="flex min-h-screen bg-zinc-50 dark:bg-zinc-900">
+> 30 |             <Sidebar />
+     |              ^
+  31 |             <div className="flex flex-col flex-1">
+  32 |                 <Navbar />
+  33 |                 <div className="p-6 space-y-4"> {
+  digest: '3128491836'
+}
+ ⨯ ReferenceError: Sidebar is not defined
+    at RootLayout (app\layout.tsx:30:14)
+  28 |     return (
+  29 |         <section className="flex min-h-screen bg-zinc-50 dark:bg-zinc-900">
+> 30 |             <Sidebar />
+     |              ^
+  31 |             <div className="flex flex-col flex-1">
+  32 |                 <Navbar />
+  33 |                 <div className="p-6 space-y-4"> {
+  digest: '3128491836'
+}
+ GET /login 500 in 1343ms
+ GET /forgot-password 500 in 1357ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 1357ms
+ ⨯ ReferenceError: Sidebar is not defined
+    at RootLayout (app\layout.tsx:30:14)
+  28 |     return (
+  29 |         <section className="flex min-h-screen bg-zinc-50 dark:bg-zinc-900">
+> 30 |             <Sidebar />
+     |              ^
+  31 |             <div className="flex flex-col flex-1">
+  32 |                 <Navbar />
+  33 |                 <div className="p-6 space-y-4"> {
+  digest: '3128491836'
+}
+ ⨯ ReferenceError: Sidebar is not defined
+    at RootLayout (app\layout.tsx:30:14)
+  28 |     return (
+  29 |         <section className="flex min-h-screen bg-zinc-50 dark:bg-zinc-900">
+> 30 |             <Sidebar />
+     |              ^
+  31 |             <div className="flex flex-col flex-1">
+  32 |                 <Navbar />
+  33 |                 <div className="p-6 space-y-4"> {
+  digest: '3128491836'
+}
+ GET /favicon.ico 200 in 332ms
+ GET /favicon.ico 200 in 356ms
+ GET /favicon.ico 200 in 293ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 151ms
+ ⨯ ReferenceError: Sidebar is not defined
+    at RootLayout (app\layout.tsx:30:14)
+  28 |     return (
+  29 |         <section className="flex min-h-screen bg-zinc-50 dark:bg-zinc-900">
+> 30 |             <Sidebar />
+     |              ^
+  31 |             <div className="flex flex-col flex-1">
+  32 |                 <Navbar />
+  33 |                 <div className="p-6 space-y-4"> {
+  digest: '3128491836'
+}
+ ⨯ ReferenceError: Sidebar is not defined
+    at RootLayout (app\layout.tsx:30:14)
+  28 |     return (
+  29 |         <section className="flex min-h-screen bg-zinc-50 dark:bg-zinc-900">
+> 30 |             <Sidebar />
+     |              ^
+  31 |             <div className="flex flex-col flex-1">
+  32 |                 <Navbar />
+  33 |                 <div className="p-6 space-y-4"> {
+  digest: '3128491836'
+}
+ ⨯ ReferenceError: Sidebar is not defined
+    at RootLayout (app\layout.tsx:30:14)
+  28 |     return (
+  29 |         <section className="flex min-h-screen bg-zinc-50 dark:bg-zinc-900">
+> 30 |             <Sidebar />
+     |              ^
+  31 |             <div className="flex flex-col flex-1">
+  32 |                 <Navbar />
+  33 |                 <div className="p-6 space-y-4"> {
+  digest: '3128491836'
+}
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 639ms
+ GET /forgot-password 500 in 649ms
+ GET /login 500 in 653ms
+ GET /favicon.ico 200 in 342ms
+ GET /favicon.ico 200 in 299ms
+ GET /favicon.ico 200 in 297ms
+ ✓ Compiled in 102ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ReferenceError: Sidebar is not defined
+    at RootLayout (app\layout.tsx:30:14)
+  28 |     return (
+  29 |         <section className="flex min-h-screen bg-zinc-50 dark:bg-zinc-900">
+> 30 |             <Sidebar />
+     |              ^
+  31 |             <div className="flex flex-col flex-1">
+  32 |                 <Navbar />
+  33 |                 <div className="p-6 space-y-4"> {
+  digest: '3128491836'
+}
+ ✓ Compiled in 110ms
+ ✓ Compiled in 155ms
+ GET /forgot-password 500 in 510ms
+ ⨯ ReferenceError: Sidebar is not defined
+    at RootLayout (app\layout.tsx:30:14)
+  28 |     return (
+  29 |         <section className="flex min-h-screen bg-zinc-50 dark:bg-zinc-900">
+> 30 |             <Sidebar />
+     |              ^
+  31 |             <div className="flex flex-col flex-1">
+  32 |                 <Navbar />
+  33 |                 <div className="p-6 space-y-4"> {
+  digest: '3128491836'
+}
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ReferenceError: Sidebar is not defined
+    at RootLayout (app\layout.tsx:30:14)
+  28 |     return (
+  29 |         <section className="flex min-h-screen bg-zinc-50 dark:bg-zinc-900">
+> 30 |             <Sidebar />
+     |              ^
+  31 |             <div className="flex flex-col flex-1">
+  32 |                 <Navbar />
+  33 |                 <div className="p-6 space-y-4"> {
+  digest: '3128491836'
+}
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 858ms
+ GET /login 500 in 877ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /favicon.ico 200 in 418ms
+ GET /favicon.ico 200 in 293ms
+ GET /favicon.ico 200 in 299ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ○ Compiling /forgot-password ...
+ ⨯ ReferenceError: Navbar is not defined
+    at RootLayout (app\layout.tsx:33:18)
+  31 |             <Sidebar />
+  32 |             <div className="flex flex-col flex-1">
+> 33 |                 <Navbar />
+     |                  ^
+  34 |                 <div className="p-6 space-y-4">
+  35 |                     <Breadcrumb />
+  36 |                     <Providers>{children}</Providers> {
+  digest: '1383398431'
+}
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 1439ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 200 in 1204ms
+ GET /forgot-password 500 in 1207ms
+ ⨯ ReferenceError: Navbar is not defined
+    at RootLayout (app\layout.tsx:33:18)
+  31 |             <Sidebar />
+  32 |             <div className="flex flex-col flex-1">
+> 33 |                 <Navbar />
+     |                  ^
+  34 |                 <div className="p-6 space-y-4">
+  35 |                     <Breadcrumb />
+  36 |                     <Providers>{children}</Providers> {
+  digest: '1383398431'
+}
+ ✓ Compiled /forgot-password in 1860ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ReferenceError: Navbar is not defined
+    at RootLayout (app\layout.tsx:33:18)
+  31 |             <Sidebar />
+  32 |             <div className="flex flex-col flex-1">
+> 33 |                 <Navbar />
+     |                  ^
+  34 |                 <div className="p-6 space-y-4">
+  35 |                     <Breadcrumb />
+  36 |                     <Providers>{children}</Providers> {
+  digest: '1383398431'
+}
+ ⨯ ReferenceError: Navbar is not defined
+    at RootLayout (app\layout.tsx:33:18)
+  31 |             <Sidebar />
+  32 |             <div className="flex flex-col flex-1">
+> 33 |                 <Navbar />
+     |                  ^
+  34 |                 <div className="p-6 space-y-4">
+  35 |                     <Breadcrumb />
+  36 |                     <Providers>{children}</Providers> {
+  digest: '1383398431'
+}
+ ⨯ ReferenceError: Navbar is not defined
+    at RootLayout (app\layout.tsx:33:18)
+  31 |             <Sidebar />
+  32 |             <div className="flex flex-col flex-1">
+> 33 |                 <Navbar />
+     |                  ^
+  34 |                 <div className="p-6 space-y-4">
+  35 |                     <Breadcrumb />
+  36 |                     <Providers>{children}</Providers> {
+  digest: '1383398431'
+}
+ ⨯ ReferenceError: Navbar is not defined
+    at RootLayout (app\layout.tsx:33:18)
+  31 |             <Sidebar />
+  32 |             <div className="flex flex-col flex-1">
+> 33 |                 <Navbar />
+     |                  ^
+  34 |                 <div className="p-6 space-y-4">
+  35 |                     <Breadcrumb />
+  36 |                     <Providers>{children}</Providers> {
+  digest: '1383398431'
+}
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 1368ms
+ ⨯ ReferenceError: Navbar is not defined
+    at RootLayout (app\layout.tsx:33:18)
+  31 |             <Sidebar />
+  32 |             <div className="flex flex-col flex-1">
+> 33 |                 <Navbar />
+     |                  ^
+  34 |                 <div className="p-6 space-y-4">
+  35 |                     <Breadcrumb />
+  36 |                     <Providers>{children}</Providers> {
+  digest: '1383398431'
+}
+ ⨯ ReferenceError: Navbar is not defined
+    at RootLayout (app\layout.tsx:33:18)
+  31 |             <Sidebar />
+  32 |             <div className="flex flex-col flex-1">
+> 33 |                 <Navbar />
+     |                  ^
+  34 |                 <div className="p-6 space-y-4">
+  35 |                     <Breadcrumb />
+  36 |                     <Providers>{children}</Providers> {
+  digest: '1383398431'
+}
+ GET /login 500 in 996ms
+ GET /forgot-password 500 in 998ms
+ GET /favicon.ico 200 in 328ms
+ GET /favicon.ico 200 in 322ms
+ GET /favicon.ico 200 in 311ms
+ ✓ Compiled in 134ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ReferenceError: Navbar is not defined
+    at RootLayout (app\layout.tsx:33:18)
+  31 |             <Sidebar />
+  32 |             <div className="flex flex-col flex-1">
+> 33 |                 <Navbar />
+     |                  ^
+  34 |                 <div className="p-6 space-y-4">
+  35 |                     <Breadcrumb />
+  36 |                     <Providers>{children}</Providers> {
+  digest: '1383398431'
+}
+ ⨯ ReferenceError: Navbar is not defined
+    at RootLayout (app\layout.tsx:33:18)
+  31 |             <Sidebar />
+  32 |             <div className="flex flex-col flex-1">
+> 33 |                 <Navbar />
+     |                  ^
+  34 |                 <div className="p-6 space-y-4">
+  35 |                     <Breadcrumb />
+  36 |                     <Providers>{children}</Providers> {
+  digest: '1383398431'
+}
+ ⨯ ReferenceError: Navbar is not defined
+    at RootLayout (app\layout.tsx:33:18)
+  31 |             <Sidebar />
+  32 |             <div className="flex flex-col flex-1">
+> 33 |                 <Navbar />
+     |                  ^
+  34 |                 <div className="p-6 space-y-4">
+  35 |                     <Breadcrumb />
+  36 |                     <Providers>{children}</Providers> {
+  digest: '1383398431'
+}
+ GET /forgot-password 500 in 681ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 699ms
+ GET /login 500 in 716ms
+ GET /favicon.ico 200 in 411ms
+ GET /favicon.ico 200 in 305ms
+ GET /favicon.ico 200 in 316ms
+ ✓ Compiled in 104ms
+ ✓ Compiled /reset-password in 102ms
+ ⨯ ReferenceError: Breadcrumb is not defined
+    at RootLayout (app\layout.tsx:35:22)
+  33 |                 <header />
+  34 |                 <div className="p-6 space-y-4">
+> 35 |                     <Breadcrumb />
+     |                      ^
+  36 |                     <Providers>{children}</Providers>
+  37 |                     <Toaster />
+  38 |                 </div> {
+  digest: '2134124758'
+}
+ ⨯ ReferenceError: Navbar is not defined
+    at RootLayout (app\layout.tsx:33:18)
+  31 |             <Sidebar />
+  32 |             <div className="flex flex-col flex-1">
+> 33 |                 <header />
+     |                  ^
+  34 |                 <div className="p-6 space-y-4">
+  35 |                     <Breadcrumb />
+  36 |                     <Providers>{children}</Providers> {
+  digest: '1383398431'
+}
+ ⨯ ReferenceError: Navbar is not defined
+    at RootLayout (app\layout.tsx:33:18)
+  31 |             <Sidebar />
+  32 |             <div className="flex flex-col flex-1">
+> 33 |                 <header />
+     |                  ^
+  34 |                 <div className="p-6 space-y-4">
+  35 |                     <Breadcrumb />
+  36 |                     <Providers>{children}</Providers> {
+  digest: '1383398431'
+}
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 939ms
+ GET /forgot-password 500 in 944ms
+ GET /login 500 in 949ms
+ GET /favicon.ico 200 in 394ms
+ GET /favicon.ico 200 in 326ms
+ GET /favicon.ico 200 in 312ms
+ ✓ Compiled in 77ms
+ ✓ Compiled /reset-password in 89ms
+ ⨯ ReferenceError: Hea is not defined
+    at RootLayout (app\layout.tsx:33:18)
+  31 |             <Sidebar />
+  32 |             <div className="flex flex-col flex-1">
+> 33 |                 <Hea />
+     |                  ^
+  34 |                 <div className="p-6 space-y-4">
+  35 |                     <Breadcrumb />
+  36 |                     <Providers>{children}</Providers> {
+  digest: '2465111679'
+}
+ ⨯ ReferenceError: Navbar is not defined
+    at RootLayout (app\layout.tsx:33:18)
+  31 |             <Sidebar />
+  32 |             <div className="flex flex-col flex-1">
+> 33 |                 <Hea />
+     |                  ^
+  34 |                 <div className="p-6 space-y-4">
+  35 |                     <Breadcrumb />
+  36 |                     <Providers>{children}</Providers> {
+  digest: '1383398431'
+}
+ ⨯ ReferenceError: Navbar is not defined
+    at RootLayout (app\layout.tsx:33:18)
+  31 |             <Sidebar />
+  32 |             <div className="flex flex-col flex-1">
+> 33 |                 <Hea />
+     |                  ^
+  34 |                 <div className="p-6 space-y-4">
+  35 |                     <Breadcrumb />
+  36 |                     <Providers>{children}</Providers> {
+  digest: '1383398431'
+}
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 782ms
+ GET /forgot-password 500 in 791ms
+ GET /login 500 in 789ms
+ GET /favicon.ico 200 in 393ms
+ GET /favicon.ico 200 in 324ms
+ GET /favicon.ico 200 in 329ms
+ ✓ Compiled in 85ms
+ ✓ Compiled /login in 103ms
+ ⨯ ReferenceError: Header is not defined
+    at RootLayout (app\layout.tsx:33:18)
+  31 |             <Sidebar />
+  32 |             <div className="flex flex-col flex-1">
+> 33 |                 <Header />
+     |                  ^
+  34 |                 <div className="p-6 space-y-4">
+  35 |                     <Breadcrumb />
+  36 |                     <Providers>{children}</Providers> {
+  digest: '880967359'
+}
+ ⨯ ReferenceError: Hea is not defined
+    at RootLayout (app\layout.tsx:33:18)
+  31 |             <Sidebar />
+  32 |             <div className="flex flex-col flex-1">
+> 33 |                 <Header />
+     |                  ^
+  34 |                 <div className="p-6 space-y-4">
+  35 |                     <Breadcrumb />
+  36 |                     <Providers>{children}</Providers> {
+  digest: '2465111679'
+}
+ ⨯ ReferenceError: Navbar is not defined
+    at RootLayout (app\layout.tsx:33:18)
+  31 |             <Sidebar />
+  32 |             <div className="flex flex-col flex-1">
+> 33 |                 <Header />
+     |                  ^
+  34 |                 <div className="p-6 space-y-4">
+  35 |                     <Breadcrumb />
+  36 |                     <Providers>{children}</Providers> {
+  digest: '1383398431'
+}
+ GET /login 500 in 742ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 746ms
+ GET /forgot-password 500 in 750ms
+ GET /favicon.ico 200 in 366ms
+ GET /favicon.ico 200 in 304ms
+ GET /favicon.ico 200 in 280ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 830ms
+ ✓ Compiled /forgot-password in 251ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ReferenceError: Breadcrumb is not defined
+    at RootLayout (app\layout.tsx:36:22)
+  34 |                 <HeroHeader />
+  35 |                 <div className="p-6 space-y-4">
+> 36 |                     <Breadcrumb />
+     |                      ^
+  37 |                     <Providers>{children}</Providers>
+  38 |                     <Toaster />
+  39 |                 </div> {
+  digest: '966650128'
+}
+ ○ Compiling /reset-password ...
+ ⨯ ReferenceError: Breadcrumb is not defined
+    at RootLayout (app\layout.tsx:36:22)
+  34 |                 <HeroHeader />
+  35 |                 <div className="p-6 space-y-4">
+> 36 |                     <Breadcrumb />
+     |                      ^
+  37 |                     <Providers>{children}</Providers>
+  38 |                     <Toaster />
+  39 |                 </div> {
+  digest: '966650128'
+}
+ ✓ Compiled /reset-password in 755ms
+ ⨯ ReferenceError: Breadcrumb is not defined
+    at RootLayout (app\layout.tsx:36:22)
+  34 |                 <HeroHeader />
+  35 |                 <div className="p-6 space-y-4">
+> 36 |                     <Breadcrumb />
+     |                      ^
+  37 |                     <Providers>{children}</Providers>
+  38 |                     <Toaster />
+  39 |                 </div> {
+  digest: '966650128'
+}
+ ⨯ ReferenceError: Breadcrumb is not defined
+    at RootLayout (app\layout.tsx:36:22)
+  34 |                 <HeroHeader />
+  35 |                 <div className="p-6 space-y-4">
+> 36 |                     <Breadcrumb />
+     |                      ^
+  37 |                     <Providers>{children}</Providers>
+  38 |                     <Toaster />
+  39 |                 </div> {
+  digest: '966650128'
+}
+ ⨯ ReferenceError: Breadcrumb is not defined
+    at RootLayout (app\layout.tsx:36:22)
+  34 |                 <HeroHeader />
+  35 |                 <div className="p-6 space-y-4">
+> 36 |                     <Breadcrumb />
+     |                      ^
+  37 |                     <Providers>{children}</Providers>
+  38 |                     <Toaster />
+  39 |                 </div> {
+  digest: '966650128'
+}
+ ⨯ ReferenceError: Breadcrumb is not defined
+    at RootLayout (app\layout.tsx:36:22)
+  34 |                 <HeroHeader />
+  35 |                 <div className="p-6 space-y-4">
+> 36 |                     <Breadcrumb />
+     |                      ^
+  37 |                     <Providers>{children}</Providers>
+  38 |                     <Toaster />
+  39 |                 </div> {
+  digest: '966650128'
+}
+ ⨯ ReferenceError: Breadcrumb is not defined
+    at RootLayout (app\layout.tsx:36:22)
+  34 |                 <HeroHeader />
+  35 |                 <div className="p-6 space-y-4">
+> 36 |                     <Breadcrumb />
+     |                      ^
+  37 |                     <Providers>{children}</Providers>
+  38 |                     <Toaster />
+  39 |                 </div> {
+  digest: '966650128'
+}
+ GET /forgot-password 500 in 1430ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 1455ms
+ GET /login 500 in 1463ms
+ GET /favicon.ico 200 in 562ms
+ GET /favicon.ico 200 in 320ms
+ GET /favicon.ico 200 in 319ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 119ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ReferenceError: Breadcrumb is not defined
+    at RootLayout (app\layout.tsx:36:22)
+  34 |                 <HeroHeader />
+  35 |                 <div className="p-6 space-y-4">
+> 36 |                     <Breadcrumb />
+     |                      ^
+  37 |                     <Providers>{children}</Providers>
+  38 |                     <Toaster />
+  39 |                 </div> {
+  digest: '966650128'
+}
+ ⨯ ReferenceError: Breadcrumb is not defined
+    at RootLayout (app\layout.tsx:36:22)
+  34 |                 <HeroHeader />
+  35 |                 <div className="p-6 space-y-4">
+> 36 |                     <Breadcrumb />
+     |                      ^
+  37 |                     <Providers>{children}</Providers>
+  38 |                     <Toaster />
+  39 |                 </div> {
+  digest: '966650128'
+}
+ ⨯ ReferenceError: Breadcrumb is not defined
+    at RootLayout (app\layout.tsx:36:22)
+  34 |                 <HeroHeader />
+  35 |                 <div className="p-6 space-y-4">
+> 36 |                     <Breadcrumb />
+     |                      ^
+  37 |                     <Providers>{children}</Providers>
+  38 |                     <Toaster />
+  39 |                 </div> {
+  digest: '966650128'
+}
+ GET /forgot-password 500 in 628ms
+ GET /login 500 in 634ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 637ms
+ GET /favicon.ico 200 in 380ms
+ GET /favicon.ico 200 in 311ms
+ GET /favicon.ico 200 in 317ms
+ ✓ Compiled in 726ms
+ ○ Compiling /login ...
+ ✓ Compiled /login in 590ms
+ ⨯ Error: useSidebar must be used within a SidebarProvider.
+    at useSidebar (components\ui\sidebar.tsx:50:11)
+    at Sidebar (components\ui\sidebar.tsx:166:58)
+  48 |   const context = React.useContext(SidebarContext)
+  49 |   if (!context) {
+> 50 |     throw new Error("useSidebar must be used within a SidebarProvider.")
+     |           ^
+  51 |   }
+  52 |
+  53 |   return context {
+  digest: '1263491204'
+}
+ GET /forgot-password 500 in 1047ms
+ ⨯ Error: useSidebar must be used within a SidebarProvider.
+    at useSidebar (components\ui\sidebar.tsx:50:11)
+    at Sidebar (components\ui\sidebar.tsx:166:58)
+  48 |   const context = React.useContext(SidebarContext)
+  49 |   if (!context) {
+> 50 |     throw new Error("useSidebar must be used within a SidebarProvider.")
+     |           ^
+  51 |   }
+  52 |
+  53 |   return context {
+  digest: '1263491204'
+}
+ ⨯ Error: useSidebar must be used within a SidebarProvider.
+    at useSidebar (components\ui\sidebar.tsx:50:11)
+    at Sidebar (components\ui\sidebar.tsx:166:58)
+  48 |   const context = React.useContext(SidebarContext)
+  49 |   if (!context) {
+> 50 |     throw new Error("useSidebar must be used within a SidebarProvider.")
+     |           ^
+  51 |   }
+  52 |
+  53 |   return context {
+  digest: '1263491204'
+}
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 1393ms
+ GET /login 500 in 1466ms
+ GET /favicon.ico 200 in 387ms
+ GET /favicon.ico 200 in 307ms
+ GET /favicon.ico 200 in 326ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 784ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ○ Compiling /login ...
+ ✓ Compiled /login in 751ms
+ GET /login 200 in 2495ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 200 in 2487ms
+ GET /forgot-password 200 in 2490ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 574ms
+ GET /favicon.ico 200 in 570ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 392ms
+ GET /favicon.ico 200 in 406ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 403ms
+ GET /favicon.ico 200 in 407ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 348ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 353ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 338ms
+ ✓ Compiled /reset-password in 173ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 200 in 226ms
+ ✓ Compiled in 823ms
+ ⨯ Error: No QueryClient set, use QueryClientProvider to set one
+    at ResetPasswordForm (components\forms\reset-password-form.tsx:51:31)
+  49 |   } = methods;
+  50 |
+> 51 |   const mutation = useMutation({
+     |                               ^
+  52 |     mutationKey: ['auth', 'reset-password'],
+  53 |     mutationFn: async (payload: FormValues) => {
+  54 |       if (!token) { {
+  digest: '948494185'
+}
+ ⨯ Error: No QueryClient set, use QueryClientProvider to set one
+    at ForgotPasswordForm (components\forms\forgot-password-form.tsx:39:33)
+  37 |     } = methods;
+  38 |
+> 39 |     const mutation = useMutation({
+     |                                 ^
+  40 |         mutationKey: ['auth', 'forgot-password'],
+  41 |         mutationFn: async (payload: FormValues) => {
+  42 |             const { data } = await api.post( {
+  digest: '1194815010'
+}
+ ✓ Compiled in 1ms
+ ⨯ Error: No QueryClient set, use QueryClientProvider to set one
+    at ResetPasswordForm (components\forms\reset-password-form.tsx:51:31)
+  49 |   } = methods;
+  50 |
+> 51 |   const mutation = useMutation({
+     |                               ^
+  52 |     mutationKey: ['auth', 'reset-password'],
+  53 |     mutationFn: async (payload: FormValues) => {
+  54 |       if (!token) { {
+  digest: '948494185'
+}
+ ⨯ Error: No QueryClient set, use QueryClientProvider to set one
+    at ForgotPasswordForm (components\forms\forgot-password-form.tsx:39:33)
+  37 |     } = methods;
+  38 |
+> 39 |     const mutation = useMutation({
+     |                                 ^
+  40 |         mutationKey: ['auth', 'forgot-password'],
+  41 |         mutationFn: async (payload: FormValues) => {
+  42 |             const { data } = await api.post( {
+  digest: '1194815010'
+}
+ ○ Compiling /forgot-password ...
+ ✓ Compiled /forgot-password in 876ms
+ ⨯ Error: No QueryClient set, use QueryClientProvider to set one
+    at LoginForm (components\forms\login-form.tsx:33:38)
+  31 |     });
+  32 |
+> 33 |     const loginMutation = useMutation({
+     |                                      ^
+  34 |         mutationKey: ['auth', 'login'],
+  35 |         mutationFn: async (payload: FormValues) => {
+  36 |             const { data } = await api.post('/auth/login', payload); {
+  digest: '887621973'
+}
+ ⨯ Error: No QueryClient set, use QueryClientProvider to set one
+    at ForgotPasswordForm (components\forms\forgot-password-form.tsx:39:33)
+  37 |     } = methods;
+  38 |
+> 39 |     const mutation = useMutation({
+     |                                 ^
+  40 |         mutationKey: ['auth', 'forgot-password'],
+  41 |         mutationFn: async (payload: FormValues) => {
+  42 |             const { data } = await api.post( {
+  digest: '1194815010'
+}
+ ⨯ Error: No QueryClient set, use QueryClientProvider to set one
+    at LoginForm (components\forms\login-form.tsx:33:38)
+  31 |     });
+  32 |
+> 33 |     const loginMutation = useMutation({
+     |                                      ^
+  34 |         mutationKey: ['auth', 'login'],
+  35 |         mutationFn: async (payload: FormValues) => {
+  36 |             const { data } = await api.post('/auth/login', payload); {
+  digest: '887621973'
+}
+ ⨯ Error: No QueryClient set, use QueryClientProvider to set one
+    at ResetPasswordForm (components\forms\reset-password-form.tsx:51:31)
+  49 |   } = methods;
+  50 |
+> 51 |   const mutation = useMutation({
+     |                               ^
+  52 |     mutationKey: ['auth', 'reset-password'],
+  53 |     mutationFn: async (payload: FormValues) => {
+  54 |       if (!token) { {
+  digest: '948494185'
+}
+ GET /forgot-password 500 in 1558ms
+ GET /login 500 in 1565ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 1566ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 404ms
+ GET /favicon.ico 200 in 361ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 293ms
+ GET /favicon.ico 200 in 297ms
+ GET /favicon.ico 200 in 298ms
+ ✓ Compiled in 114ms
+ ✓ Compiled /reset-password in 355ms
+ ⨯ ReferenceError: HeroHeader is not defined
+    at RootLayout (app\layout.tsx:31:26)
+  29 |                 <section className="flex min-h-screen bg-zinc-50 dark:bg-zinc-900">
+  30 |                     <div className="flex flex-col flex-1">
+> 31 |                         <HeroHeader />
+     |                          ^
+  32 |                         <div className="p-6 space-y-4">
+  33 |                             <Breadcrumb />
+  34 |                             <Providers>{children}</Providers> {
+  digest: '1740185368'
+}
+ ⨯ Error: No QueryClient set, use QueryClientProvider to set one
+    at ForgotPasswordForm (components\forms\forgot-password-form.tsx:39:33)
+  37 |     } = methods;
+  38 |
+> 39 |     const mutation = useMutation({
+     |                                 ^
+  40 |         mutationKey: ['auth', 'forgot-password'],
+  41 |         mutationFn: async (payload: FormValues) => {
+  42 |             const { data } = await api.post( {
+  digest: '1194815010'
+}
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 1081ms
+ ⨯ Error: No QueryClient set, use QueryClientProvider to set one
+    at LoginForm (components\forms\login-form.tsx:33:38)
+  31 |     });
+  32 |
+> 33 |     const loginMutation = useMutation({
+     |                                      ^
+  34 |         mutationKey: ['auth', 'login'],
+  35 |         mutationFn: async (payload: FormValues) => {
+  36 |             const { data } = await api.post('/auth/login', payload); {
+  digest: '887621973'
+}
+ GET /forgot-password 500 in 1221ms
+ GET /login 500 in 1243ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 382ms
+ GET /favicon.ico 200 in 348ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 326ms
+ GET /favicon.ico 200 in 332ms
+ GET /favicon.ico 200 in 316ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 694ms
+ ⨯ ReferenceError: Breadcrumb is not defined
+    at RootLayout (app\layout.tsx:34:30)
+  32 |                         <HeroHeader />
+  33 |                         <div className="p-6 space-y-4">
+> 34 |                             <Breadcrumb />
+     |                              ^
+  35 |                             <Providers>{children}</Providers>
+  36 |                             <Toaster />
+  37 |                         </div> {
+  digest: '3925866206'
+}
+ ○ Compiling /forgot-password ...
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /forgot-password 500 in 961ms
+ ⨯ ReferenceError: Breadcrumb is not defined
+    at RootLayout (app\layout.tsx:34:30)
+  32 |                         <HeroHeader />
+  33 |                         <div className="p-6 space-y-4">
+> 34 |                             <Breadcrumb />
+     |                              ^
+  35 |                             <Providers>{children}</Providers>
+  36 |                             <Toaster />
+  37 |                         </div> {
+  digest: '3925866206'
+}
+ ✓ Compiled /forgot-password in 933ms
+ ⨯ ReferenceError: Breadcrumb is not defined
+    at RootLayout (app\layout.tsx:34:30)
+  32 |                         <HeroHeader />
+  33 |                         <div className="p-6 space-y-4">
+> 34 |                             <Breadcrumb />
+     |                              ^
+  35 |                             <Providers>{children}</Providers>
+  36 |                             <Toaster />
+  37 |                         </div> {
+  digest: '3925866206'
+}
+ ⨯ ReferenceError: Breadcrumb is not defined
+    at RootLayout (app\layout.tsx:34:30)
+  32 |                         <HeroHeader />
+  33 |                         <div className="p-6 space-y-4">
+> 34 |                             <Breadcrumb />
+     |                              ^
+  35 |                             <Providers>{children}</Providers>
+  36 |                             <Toaster />
+  37 |                         </div> {
+  digest: '3925866206'
+}
+ ⨯ ReferenceError: Breadcrumb is not defined
+    at RootLayout (app\layout.tsx:34:30)
+  32 |                         <HeroHeader />
+  33 |                         <div className="p-6 space-y-4">
+> 34 |                             <Breadcrumb />
+     |                              ^
+  35 |                             <Providers>{children}</Providers>
+  36 |                             <Toaster />
+  37 |                         </div> {
+  digest: '3925866206'
+}
+ ⨯ ReferenceError: Breadcrumb is not defined
+    at RootLayout (app\layout.tsx:34:30)
+  32 |                         <HeroHeader />
+  33 |                         <div className="p-6 space-y-4">
+> 34 |                             <Breadcrumb />
+     |                              ^
+  35 |                             <Providers>{children}</Providers>
+  36 |                             <Toaster />
+  37 |                         </div> {
+  digest: '3925866206'
+}
+ ⨯ ReferenceError: Breadcrumb is not defined
+    at RootLayout (app\layout.tsx:34:30)
+  32 |                         <HeroHeader />
+  33 |                         <div className="p-6 space-y-4">
+> 34 |                             <Breadcrumb />
+     |                              ^
+  35 |                             <Providers>{children}</Providers>
+  36 |                             <Toaster />
+  37 |                         </div> {
+  digest: '3925866206'
+}
+ GET /login 500 in 953ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 954ms
+ GET /forgot-password 500 in 969ms
+ ✓ Compiled in 747ms
+ GET /favicon.ico 200 in 354ms
+ GET /favicon.ico 200 in 298ms
+ GET /favicon.ico 200 in 284ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ ReferenceError: Toaster is not defined
+    at RootLayout (app\layout.tsx:38:30)
+  36 |                             <Breadcrumb />
+  37 |                             <Providers>{children}</Providers>
+> 38 |                             <Toaster />
+     |                              ^
+  39 |                         </div>
+  40 |                     </div>
+  41 |                 </section> {
+  digest: '1749248472'
+}
+ ○ Compiling /reset-password ...
+ ✓ Compiled in 968ms
+ ⨯ ReferenceError: Toaster is not defined
+    at RootLayout (app\layout.tsx:38:30)
+  36 |                             <Breadcrumb />
+  37 |                             <Providers>{children}</Providers>
+> 38 |                             <Toaster />
+     |                              ^
+  39 |                         </div>
+  40 |                     </div>
+  41 |                 </section> {
+  digest: '1749248472'
+}
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled /reset-password in 1516ms
+ ⨯ ReferenceError: Toaster is not defined
+    at RootLayout (app\layout.tsx:38:30)
+  36 |                             <Breadcrumb />
+  37 |                             <Providers>{children}</Providers>
+> 38 |                             <Toaster />
+     |                              ^
+  39 |                         </div>
+  40 |                     </div>
+  41 |                 </section> {
+  digest: '1749248472'
+}
+ ⨯ ReferenceError: Toaster is not defined
+    at RootLayout (app\layout.tsx:38:30)
+  36 |                             <Breadcrumb />
+  37 |                             <Providers>{children}</Providers>
+> 38 |                             <Toaster />
+     |                              ^
+  39 |                         </div>
+  40 |                     </div>
+  41 |                 </section> {
+  digest: '1749248472'
+}
+ ⨯ ReferenceError: Toaster is not defined
+    at RootLayout (app\layout.tsx:38:30)
+  36 |                             <Breadcrumb />
+  37 |                             <Providers>{children}</Providers>
+> 38 |                             <Toaster />
+     |                              ^
+  39 |                         </div>
+  40 |                     </div>
+  41 |                 </section> {
+  digest: '1749248472'
+}
+ ⨯ ReferenceError: Toaster is not defined
+    at RootLayout (app\layout.tsx:38:30)
+  36 |                             <Breadcrumb />
+  37 |                             <Providers>{children}</Providers>
+> 38 |                             <Toaster />
+     |                              ^
+  39 |                         </div>
+  40 |                     </div>
+  41 |                 </section> {
+  digest: '1749248472'
+}
+ GET /forgot-password 500 in 1201ms
+ GET /login 500 in 1210ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 1218ms
+ ✓ Compiled in 866ms
+ GET /favicon.ico 200 in 359ms
+ GET /favicon.ico 200 in 309ms
+ GET /favicon.ico 200 in 297ms
+ ✓ Compiled /login in 66ms
+ GET /login 200 in 669ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 362ms
+ ○ Compiling /forgot-password ...
+ ⨯ [Error: The default export is not a React Component in "/login/layout"]
+ ⨯ [Error: The default export is not a React Component in "/login/layout"] {
+  page: '/login'
+}
+ ✓ Compiled in 1838ms
+ ⨯ [Error: The default export is not a React Component in "/reset-password/layout"]
+ ⨯ [Error: The default export is not a React Component in "/reset-password/layout"] {
+  page: '/reset-password'
+}
+ ✓ Compiled /forgot-password in 1839ms
+ GET /login 500 in 1936ms
+ ⨯ [Error: The default export is not a React Component in "/forgot-password/layout"]
+ ⨯ [Error: The default export is not a React Component in "/forgot-password/layout"] {
+  page: '/forgot-password'
+}
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 2655ms
+ GET /forgot-password 500 in 2815ms
+ ⨯ [Error: The default export is not a React Component in "/login/layout"]
+ ⨯ [Error: The default export is not a React Component in "/login/layout"] {
+  page: '/login'
+}
+ GET /login 500 in 793ms
+ ⨯ [Error: The default export is not a React Component in "/login/layout"]
+ ⨯ [Error: The default export is not a React Component in "/login/layout"] {
+  page: '/login'
+}
+ GET /login 500 in 635ms
+ ⨯ [Error: The default export is not a React Component in "/login/layout"]
+ ⨯ [Error: The default export is not a React Component in "/login/layout"] {
+  page: '/login'
+}
+ GET /favicon.ico 200 in 1094ms
+ GET /login 500 in 580ms
+ ⨯ [Error: The default export is not a React Component in "/login/layout"]
+ ⨯ [Error: The default export is not a React Component in "/login/layout"] {
+  page: '/login'
+}
+ GET /favicon.ico 200 in 797ms
+ GET /login 500 in 787ms
+ ✓ Compiled in 90ms
+ ✓ Compiled in 116ms
+ ✓ Compiled in 83ms
+ ✓ Compiled in 81ms
+ ✓ Compiled /reset-password in 128ms
+ ⨯ [Error: The default export is not a React Component in "/reset-password/layout"]
+ ⨯ [Error: The default export is not a React Component in "/reset-password/layout"] {
+  page: '/reset-password'
+}
+ ⨯ [Error: The default export is not a React Component in "/login/layout"]
+ ⨯ [Error: The default export is not a React Component in "/login/layout"] {
+  page: '/login'
+}
+ GET /forgot-password 200 in 1815ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 1939ms
+ GET /login 500 in 1939ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 350ms
+ GET /favicon.ico 200 in 323ms
+ GET /favicon.ico 200 in 298ms
+ ✓ Compiled in 104ms
+ ✓ Compiled /login in 116ms
+ GET /forgot-password 200 in 1050ms
+ GET /login 200 in 1082ms
+ GET /forgot-password 200 in 261ms
+ GET /forgot-password 200 in 173ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 428ms
+ GET /forgot-password 200 in 154ms
+ ✓ Compiled in 97ms
+ ✓ Compiled /login in 99ms
+ GET /login 200 in 436ms
+ GET /forgot-password 200 in 436ms
+ GET /forgot-password 200 in 251ms
+ GET /login 200 in 252ms
+ GET /forgot-password 200 in 251ms
+ GET /login 200 in 248ms
+ GET /forgot-password 200 in 244ms
+ GET /login 200 in 243ms
+ ✓ Compiled in 96ms
+ GET /forgot-password 200 in 161ms
+ GET /login 200 in 164ms
+ ✓ Compiled in 193ms
+ GET /login 200 in 242ms
+ GET /forgot-password 200 in 243ms
+ ✓ Compiled in 105ms
+ GET /forgot-password 200 in 166ms
+ GET /login 200 in 169ms
+ ✓ Compiled in 159ms
+ GET /forgot-password 200 in 353ms
+ GET /login 200 in 355ms
+ ✓ Compiled in 113ms
+ ✓ Compiled /login in 106ms
+ GET /login 200 in 671ms
+ GET /forgot-password 200 in 677ms
+ GET /login 200 in 679ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 395ms
+ GET /forgot-password 200 in 132ms
+ ○ Compiling /login ...
+ ✓ Compiled in 741ms
+ ✓ Compiled /login in 674ms
+ GET /login 200 in 889ms
+ ✓ Compiled in 93ms
+ ✓ Compiled /forgot-password in 84ms
+ GET /forgot-password 200 in 637ms
+ GET /login 200 in 638ms
+ GET /forgot-password 200 in 622ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 310ms
+ ✓ Compiled in 137ms
+ GET /login 200 in 173ms
+ ✓ Compiled /forgot-password in 113ms
+ GET /forgot-password 200 in 321ms
+ GET /login 200 in 482ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 318ms
+ GET /login 200 in 159ms
+ GET /login 200 in 138ms
+ GET /login 200 in 149ms
+ GET /login 200 in 161ms
+ GET /login 200 in 137ms
+ ✓ Compiled / in 72ms
+ GET / 200 in 340ms
+ GET / 200 in 130ms
+ GET / 200 in 134ms
+ GET / 200 in 130ms
+ GET / 200 in 147ms
+ ✓ Compiled in 106ms
+ ✓ Compiled in 83ms
+ ✓ Compiled in 104ms
+ ✓ Compiled in 123ms
+ ✓ Compiled /_not-found/page in 56ms
+ GET /en 404 in 472ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 101ms
+ ✓ Compiled /reset-password in 94ms
+ ⨯ ReferenceError: useTranslations is not defined
+    at HeroHeader (components\header.tsx:16:15)
+  14 |
+  15 | export const HeroHeader = () => {
+> 16 |     const t = useTranslations('UserProfile');
+     |               ^
+  17 |
+  18 |     const [menuState, setMenuState] = React.useState(false);
+  19 |     const [isScrolled, setIsScrolled] = React.useState(false); {
+  digest: '1834589809'
+}
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 728ms
+ GET /favicon.ico 200 in 300ms
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:17:30)
+  15 |
+  16 | export const HeroHeader = () => {
+> 17 |     const t = useTranslations('UserProfile');
+     |                              ^
+  18 |
+  19 |     const [menuState, setMenuState] = React.useState(false);
+  20 |     const [isScrolled, setIsScrolled] = React.useState(false); {
+  digest: '723631607'
+}
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 1193ms
+ GET /en 500 in 935ms
+ GET /forgot-password 200 in 1102ms
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:17:30)
+  15 |
+  16 | export const HeroHeader = () => {
+> 17 |     const t = useTranslations('UserProfile');
+     |                              ^
+  18 |
+  19 |     const [menuState, setMenuState] = React.useState(false);
+  20 |     const [isScrolled, setIsScrolled] = React.useState(false); {
+  digest: '723631607'
+}
+ ○ Compiling /reset-password ...
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 200 in 801ms
+ ✓ Compiled /reset-password in 989ms
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:17:30)
+  15 |
+  16 | export const HeroHeader = () => {
+> 17 |     const t = useTranslations('UserProfile');
+     |                              ^
+  18 |
+  19 |     const [menuState, setMenuState] = React.useState(false);
+  20 |     const [isScrolled, setIsScrolled] = React.useState(false); {
+  digest: '723631607'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:17:30)
+  15 |
+  16 | export const HeroHeader = () => {
+> 17 |     const t = useTranslations('UserProfile');
+     |                              ^
+  18 |
+  19 |     const [menuState, setMenuState] = React.useState(false);
+  20 |     const [isScrolled, setIsScrolled] = React.useState(false); {
+  digest: '723631607'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:17:30)
+  15 |
+  16 | export const HeroHeader = () => {
+> 17 |     const t = useTranslations('UserProfile');
+     |                              ^
+  18 |
+  19 |     const [menuState, setMenuState] = React.useState(false);
+  20 |     const [isScrolled, setIsScrolled] = React.useState(false); {
+  digest: '723631607'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:17:30)
+  15 |
+  16 | export const HeroHeader = () => {
+> 17 |     const t = useTranslations('UserProfile');
+     |                              ^
+  18 |
+  19 |     const [menuState, setMenuState] = React.useState(false);
+  20 |     const [isScrolled, setIsScrolled] = React.useState(false); {
+  digest: '723631607'
+}
+ GET /forgot-password 500 in 873ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 866ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 828ms
+ GET /favicon.ico 200 in 727ms
+ GET /favicon.ico 200 in 297ms
+ GET /favicon.ico 200 in 291ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 99ms
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:13:30)
+  11 |
+  12 | export const HeroHeader = () => {
+> 13 |     const t = useTranslations('UserProfile');
+     |                              ^
+  14 |
+  15 |     const [menuState, setMenuState] = React.useState(false);
+  16 |     const [isScrolled, setIsScrolled] = React.useState(false); {
+  digest: '889206516'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:30:17)
+  28 |                 data-state={menuState && 'active'}
+  29 |                 className="fixed z-20 w-full px-2">
+> 30 |                 <div
+     |                 ^
+  31 |                     className={cn(
+  32 |                         'mx-auto mt-2 max-w-6xl px-6 transition-all duration-300 lg:px-12',
+  33 |                         isScrolled && {
+  digest: '723631607'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:30:17)
+  28 |                 data-state={menuState && 'active'}
+  29 |                 className="fixed z-20 w-full px-2">
+> 30 |                 <div
+     |                 ^
+  31 |                     className={cn(
+  32 |                         'mx-auto mt-2 max-w-6xl px-6 transition-all duration-300 lg:px-12',
+  33 |                         isScrolled && {
+  digest: '723631607'
+}
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 1291ms
+ GET /en 500 in 1263ms
+ GET /forgot-password 500 in 1272ms
+ GET /favicon.ico 200 in 543ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 414ms
+ GET /favicon.ico 200 in 295ms
+ GET /favicon.ico 200 in 293ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 85ms
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |     
+  13 |     const menuItems = [
+  14 |         { name: 'Tổng quan', href: '#link' }, {
+  digest: '889206516'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:17:6)
+  15 |         { name: 'Khách sạn', href: '#link' },
+  16 |         { name: 'Người dùng', href: '#link' },
+> 17 |     ];
+     |      ^
+  18 |     const [menuState, setMenuState] = React.useState(false);
+  19 |     const [isScrolled, setIsScrolled] = React.useState(false);
+  20 | {
+  digest: '723631607'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:17:6)
+  15 |         { name: 'Khách sạn', href: '#link' },
+  16 |         { name: 'Người dùng', href: '#link' },
+> 17 |     ];
+     |      ^
+  18 |     const [menuState, setMenuState] = React.useState(false);
+  19 |     const [isScrolled, setIsScrolled] = React.useState(false);
+  20 | {
+  digest: '723631607'
+}
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 804ms
+ GET /en 500 in 803ms
+ GET /forgot-password 500 in 816ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 452ms
+ GET /favicon.ico 200 in 436ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 322ms
+ GET /favicon.ico 200 in 325ms
+ GET /favicon.ico 200 in 318ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 112ms
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: 'Tổng quan', href: '#link' }, {
+  digest: '889206516'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:17:6)
+  15 |         { name: 'Khách sạn', href: '#link' },
+  16 |         { name: 'Người dùng', href: '#link' },
+> 17 |     ];
+     |      ^
+  18 |     
+  19 |     const [menuState, setMenuState] = React.useState(false);
+  20 |     const [isScrolled, setIsScrolled] = React.useState(false); {
+  digest: '723631607'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:17:6)
+  15 |         { name: 'Khách sạn', href: '#link' },
+  16 |         { name: 'Người dùng', href: '#link' },
+> 17 |     ];
+     |      ^
+  18 |     
+  19 |     const [menuState, setMenuState] = React.useState(false);
+  20 |     const [isScrolled, setIsScrolled] = React.useState(false); {
+  digest: '723631607'
+}
+ GET /en 500 in 816ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 823ms
+ GET /forgot-password 500 in 832ms
+ GET /favicon.ico 200 in 367ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 355ms
+ GET /favicon.ico 200 in 316ms
+ GET /favicon.ico 200 in 309ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 78ms
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t(), href: '#link' }, {
+  digest: '889206516'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:17:6)
+  15 |         { name: 'Khách sạn', href: '#link' },
+  16 |         { name: 'Người dùng', href: '#link' },
+> 17 |     ];
+     |      ^
+  18 |
+  19 |     const [menuState, setMenuState] = React.useState(false);
+  20 |     const [isScrolled, setIsScrolled] = React.useState(false); {
+  digest: '723631607'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:17:6)
+  15 |         { name: 'Khách sạn', href: '#link' },
+  16 |         { name: 'Người dùng', href: '#link' },
+> 17 |     ];
+     |      ^
+  18 |
+  19 |     const [menuState, setMenuState] = React.useState(false);
+  20 |     const [isScrolled, setIsScrolled] = React.useState(false); {
+  digest: '723631607'
+}
+ GET /en 500 in 737ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 742ms
+ GET /forgot-password 500 in 749ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 391ms
+ GET /favicon.ico 200 in 391ms
+ GET /favicon.ico 200 in 332ms
+ GET /favicon.ico 200 in 294ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 76ms
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t(''), href: '#link' }, {
+  digest: '889206516'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:17:6)
+  15 |         { name: 'Khách sạn', href: '#link' },
+  16 |         { name: 'Người dùng', href: '#link' },
+> 17 |     ];
+     |      ^
+  18 |
+  19 |     const [menuState, setMenuState] = React.useState(false);
+  20 |     const [isScrolled, setIsScrolled] = React.useState(false); {
+  digest: '723631607'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t(''), href: '#link' }, {
+  digest: '889206516'
+}
+ GET /forgot-password 500 in 816ms
+ GET /en 500 in 833ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 851ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 620ms
+ GET /favicon.ico 200 in 598ms
+ GET /favicon.ico 200 in 289ms
+ GET /favicon.ico 200 in 327ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 79ms
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t('menu.overview'), href: '#link' }, {
+  digest: '889206516'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t('menu.overview'), href: '#link' }, {
+  digest: '889206516'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t('menu.overview'), href: '#link' }, {
+  digest: '889206516'
+}
+ GET /en 500 in 901ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 913ms
+ GET /forgot-password 500 in 915ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 402ms
+ GET /favicon.ico 200 in 412ms
+ GET /favicon.ico 200 in 288ms
+ GET /favicon.ico 200 in 639ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 72ms
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t('menu.overview'), href: '#link' }, {
+  digest: '889206516'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t('menu.overview'), href: '#link' }, {
+  digest: '889206516'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t('menu.overview'), href: '#link' }, {
+  digest: '889206516'
+}
+ GET /forgot-password 500 in 877ms
+ GET /en 500 in 886ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 892ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 379ms
+ GET /favicon.ico 200 in 379ms
+ GET /favicon.ico 200 in 294ms
+ GET /favicon.ico 200 in 310ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 81ms
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t('menu.overview'), href: '#link' }, {
+  digest: '889206516'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t('menu.overview'), href: '#link' }, {
+  digest: '889206516'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t('menu.overview'), href: '#link' }, {
+  digest: '889206516'
+}
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 775ms
+ GET /en 500 in 775ms
+ GET /forgot-password 500 in 792ms
+ GET /favicon.ico 200 in 629ms
+ GET /favicon.ico 200 in 279ms
+ GET /favicon.ico 200 in 316ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 78ms
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t('menu.overview'), href: '#link' }, {
+  digest: '889206516'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t('menu.overview'), href: '#link' }, {
+  digest: '889206516'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t('menu.overview'), href: '#link' }, {
+  digest: '889206516'
+}
+ GET /forgot-password 500 in 820ms
+ GET /en 500 in 819ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 828ms
+ GET /favicon.ico 200 in 362ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 344ms
+ GET /favicon.ico 200 in 321ms
+ GET /favicon.ico 200 in 326ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled in 102ms
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t('menu.overview'), href: '#link' }, {
+  digest: '889206516'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t('menu.overview'), href: '#link' }, {
+  digest: '889206516'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t('menu.overview'), href: '#link' }, {
+  digest: '889206516'
+}
+ GET /en 500 in 810ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 822ms
+ GET /forgot-password 500 in 831ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 443ms
+ GET /favicon.ico 200 in 438ms
+ GET /favicon.ico 200 in 329ms
+ GET /favicon.ico 200 in 342ms
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t('menu.overview'), href: '#link' }, {
+  digest: '889206516'
+}
+ GET /en 500 in 193ms
+ GET /favicon.ico 200 in 315ms
+ ✓ Compiled in 82ms
+ ✓ Compiled /forgot-password in 102ms
+ ⨯ ReferenceError: NextIntlClientProvider is not defined
+    at RootLayout (app\layout.tsx:39:34)
+  37 |                             <Breadcrumb />
+  38 |                             <Providers>
+> 39 |                                 <NextIntlClientProvider></NextIntlClientProvider>
+     |                                  ^
+  40 |                                 {children}</Providers>
+  41 |                             <Toaster />
+  42 |                         </div> {
+  digest: '1423034260'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t('menu.overview'), href: '#link' }, {
+  digest: '889206516'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t('menu.overview'), href: '#link' }, {
+  digest: '889206516'
+}
+ GET /forgot-password 500 in 932ms
+ GET /en 500 in 922ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 947ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 435ms
+ GET /favicon.ico 200 in 380ms
+ GET /favicon.ico 200 in 295ms
+ GET /favicon.ico 200 in 297ms
+ ✓ Compiled in 125ms
+ ✓ Compiled /reset-password in 143ms
+ ⨯ ReferenceError: NextIntlClientProvider is not defined
+    at RootLayout (app\layout.tsx:39:34)
+  37 |                             <Breadcrumb />
+  38 |                             <Providers>
+> 39 |                                 <NextIntlClientProvider>
+     |                                  ^
+  40 |                                     {children}
+  41 |                                 </NextIntlClientProvider>
+  42 |                             </Providers> {
+  digest: '2603384787'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t('menu.overview'), href: '#link' }, {
+  digest: '889206516'
+}
+ ⨯ ReferenceError: NextIntlClientProvider is not defined
+    at RootLayout (app\layout.tsx:40:38)
+  38 |                             <Providers>
+  39 |                                 <NextIntlClientProvider>
+> 40 |                                     {children}
+     |                                      ^
+  41 |                                 </NextIntlClientProvider>
+  42 |                             </Providers>
+  43 |                             <Toaster /> {
+  digest: '1423034260'
+}
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 944ms
+ GET /en 500 in 948ms
+ GET /forgot-password 500 in 952ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 339ms
+ GET /favicon.ico 200 in 335ms
+ GET /favicon.ico 200 in 297ms
+ GET /favicon.ico 200 in 322ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ GET /forgot-password 200 in 389ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⨯ [Error: Couldn't find next-intl config file. Please follow the instructions at https://next-intl.dev/docs/getting-started/app-router] {
+  digest: '2828444224'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t('menu.overview'), href: '#link' }, {
+  digest: '2822300447'
+}
+ ○ Compiling /reset-password ...
+ ✓ Compiled in 1564ms
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+ ✓ Compiled /reset-password in 1230ms
+ ⨯ [Error: Couldn't find next-intl config file. Please follow the instructions at https://next-intl.dev/docs/getting-started/app-router] {
+  digest: '2828444224'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t('menu.overview'), href: '#link' }, {
+  digest: '2822300447'
+}
+ ○ Compiling /_not-found/page ...
+ ✓ Compiled /_not-found/page in 583ms
+ ⨯ [Error: Couldn't find next-intl config file. Please follow the instructions at https://next-intl.dev/docs/getting-started/app-router] {
+  digest: '2828444224'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t('menu.overview'), href: '#link' }, {
+  digest: '2822300447'
+}
+ GET /en 500 in 2280ms
+ ⨯ [Error: Couldn't find next-intl config file. Please follow the instructions at https://next-intl.dev/docs/getting-started/app-router] {
+  digest: '2828444224'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t('menu.overview'), href: '#link' }, {
+  digest: '2822300447'
+}
+ ⨯ [Error: Couldn't find next-intl config file. Please follow the instructions at https://next-intl.dev/docs/getting-started/app-router] {
+  digest: '2828444224'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t('menu.overview'), href: '#link' }, {
+  digest: '2822300447'
+}
+ ⨯ [Error: Couldn't find next-intl config file. Please follow the instructions at https://next-intl.dev/docs/getting-started/app-router] {
+  digest: '2828444224'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t('menu.overview'), href: '#link' }, {
+  digest: '2822300447'
+}
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 2012ms
+ GET /forgot-password 500 in 2020ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 570ms
+ GET /favicon.ico 200 in 566ms
+ GET /favicon.ico 200 in 328ms
+ GET /favicon.ico 200 in 334ms
+ ✓ Compiled in 85ms
+ ✓ Compiled /forgot-password in 123ms
+ ⨯ [Error: Couldn't find next-intl config file. Please follow the instructions at https://next-intl.dev/docs/getting-started/app-router] {
+  digest: '2828444224'
+}
+ ⨯ [Error: Couldn't find next-intl config file. Please follow the instructions at https://next-intl.dev/docs/getting-started/app-router] {
+  digest: '2828444224'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t('menu.overview'), href: '#link' }, {
+  digest: '2822300447'
+}
+ ⨯ [Error: Couldn't find next-intl config file. Please follow the instructions at https://next-intl.dev/docs/getting-started/app-router] {
+  digest: '2828444224'
+}
+ ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+    at HeroHeader (components\header.tsx:11:30)
+   9 |
+  10 | export const HeroHeader = () => {
+> 11 |     const t = useTranslations('UserProfile');
+     |                              ^
+  12 |
+  13 |     const menuItems = [
+  14 |         { name: t('menu.overview'), href: '#link' }, {
+  digest: '2822300447'
+}
+ GET /forgot-password 500 in 1932ms
+ GET /en 500 in 1895ms
+ GET /reset-password?token=39057575ca3a75faa45c4ab10ae2f749765b194ac0cc66a34337a48c978ff69a 500 in 1936ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 535ms
+ GET /favicon.ico 200 in 524ms
+ GET /favicon.ico 200 in 323ms
+ GET /favicon.ico 200 in 334ms
+ ⚠ Found a change in next.config.ts. Restarting the server to apply the changes...
+K:\hotel-booking-project\node_modules\.pnpm\next-intl@4.3.12_next@15.5._ec17417e81965f98d3287fb0f21883f6\node_modules\next-intl\dist\cjs\development\plugin.cjs:120
+    throw new Error(formatMessage(message));
+          ^
+
+Error: 
+[next-intl] Could not locate request configuration module.
+
+This path is supported by default: ./(src/)i18n/request.{js,jsx,ts,tsx}
+
+Alternatively, you can specify a custom location in your Next.js config:
+
+const withNextIntl = createNextIntlPlugin(
+
+Alternatively, you can specify a custom location in your Next.js config:
+
+const withNextIntl = createNextIntlPlugin(
+  './path/to/i18n/request.tsx'
+);
+
+    at throwError (K:\hotel-booking-project\node_modules\.pnpm\next-intl@4.3.12_next@15.5._ec17417e81965f98d3287fb0f21883f6\node_modules\next-intl\dist\cjs\development\plugin.cjs:120:11)
+    at resolveI18nPath (K:\hotel-booking-project\node_modules\.pnpm\next-intl@4.3.12_next@15.5._ec17417e81965f98d3287fb0f21883f6\node_modules\next-intl\dist\cjs\development\plugin.cjs:290:9)
+    at getNextConfig (K:\hotel-booking-project\node_modules\.pnpm\next-intl@4.3.12_next@15.5._ec17417e81965f98d3287fb0f21883f6\node_modules\next-intl\dist\cjs\development\plugin.cjs:305:33)
+    at initPlugin (K:\hotel-booking-project\node_modules\.pnpm\next-intl@4.3.12_next@15.5._ec17417e81965f98d3287fb0f21883f6\node_modules\next-intl\dist\cjs\development\plugin.cjs:353:12)
+    at withNextIntl (K:\hotel-booking-project\node_modules\.pnpm\next-intl@4.3.12_next@15.5._ec17417e81965f98d3287fb0f21883f6\node_modules\next-intl\dist\cjs\development\plugin.cjs:361:16)
+    at Object.<anonymous> (K:\hotel-booking-project\apps\web\next.config.compiled.js:19:16)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at requireFromString (K:\hotel-booking-project\node_modules\.pnpm\next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0\node_modules\next\dist\build\next-config-ts\require-hook.js:81:7)
+    at transpileConfig (K:\hotel-booking-project\node_modules\.pnpm\next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0\node_modules\next\dist\build\next-config-ts\transpile-config.js:98:51)
+    at async loadConfig (K:\hotel-booking-project\node_modules\.pnpm\next@15.5.4_react-dom@19.1.0_react@19.1.0__react@19.1.0\node_modules\next\dist\server\config.js:1060:36)
+
+Node.js v22.13.0
+[?25h

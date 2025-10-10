@@ -1,0 +1,9 @@
+{
+    "dashboard": {
+        "title": "Bảng điều khiển",
+        "menu": {
+            "overview": "Tổng quan",
+            "hotels": "Khách sạn"
+        }
+    }
+}
