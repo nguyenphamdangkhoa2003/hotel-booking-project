@@ -25,6 +25,10 @@ import { ResetPasswordDto } from 'src/modules/auth/dto/reset-password.dto';
 import { GoogleAuthGuard } from 'src/modules/auth/guard/google.guard';
 import type { Response } from 'express';
 import { RefreshTokenDto } from 'src/modules/auth/dto/refresh-token.dto';
+import { RolesGuard } from 'src/modules/auth/guard/roles.guard';
+import { Roles } from 'src/common/decorators/roles.decorator';
+import { Role } from '@prisma/client';
+import { Public } from 'src/common/decorators/public.decorator';
 
 @ApiTags('Auth')
 @Controller('auth')
@@ -34,12 +38,14 @@ export class AuthController {
     private readonly users: UsersService,
   ) {}
 
+  @Public()
   @Post('register')
   @ApiCreatedResponse({ description: 'Register new user' })
   async register(@Body() dto: RegisterDto) {
     return this.auth.register(dto.email, dto.password, dto.fullName);
   }
 
+  @Public()
   @Post('login')
   @HttpCode(200)
   @ApiOkResponse({ description: 'Login success' })
@@ -62,6 +68,7 @@ export class AuthController {
     return this.users.updateProfile(req.user.id, { fullName: body.fullName });
   }
 
+  @Public()
   @Post('forgot-password')
   @HttpCode(200)
   @ApiOkResponse({ description: 'Always 200 even if email not found' })
@@ -79,12 +86,14 @@ export class AuthController {
     );
   }
 
+  @Public()
   @Get('google')
   @UseGuards(GoogleAuthGuard)
   googleAuth() {
     // Passport chuyển hướng tới Google consent screen
   }
 
+  @Public()
   @Get('google/callback')
   @UseGuards(GoogleAuthGuard)
   async googleCallback(@Req() req: any, @Res() res: Response) {
@@ -104,9 +113,18 @@ export class AuthController {
     return res.redirect(redirect);
   }
 
+  @Public()
   @Post('refresh')
   @ApiOkResponse({ description: 'Refresh access token when expired' })
   async refresh(@Body() dto: RefreshTokenDto) {
     return this.auth.refresh(dto.refreshToken);
+  }
+
+  @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(Role.ADMIN, Role.MANAGER)
+  @Get('all-users')
+  @ApiBearerAuth('access-token')
+  async getAllUsers() {
+    return this.users.findAll();
   }
 }

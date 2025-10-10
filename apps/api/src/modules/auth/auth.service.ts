@@ -33,7 +33,11 @@ export class AuthService {
 
     await this.mailer.sendWelcome(email, { fullName: fullName ?? email });
 
-    const tokens = await this.signTokens(safeUser.id, safeUser.email);
+    const tokens = await this.signTokens(
+      safeUser.id,
+      safeUser.email,
+      safeUser.role,
+    );
     return { user: safeUser, ...tokens };
   }
 
@@ -44,21 +48,16 @@ export class AuthService {
     const ok = await argon2.verify(user.passwordHash, password);
     if (!ok) throw new UnauthorizedException('Invalid credentials');
 
-    const tokens = await this.signTokens(user.id, user.email);
+    const tokens = await this.signTokens(user.id, user.email, user.role);
     // Nên trả “public user”
     const safeUser = await this.users.findPublicById(user.id);
     return { user: safeUser, ...tokens };
   }
 
-  private async signTokens(sub: string, email: string) {
-    const accessToken = await this.jwt.signAsync(
-      { sub, email },
-      { expiresIn: '1s' },
-    );
-    const refreshToken = await this.jwt.signAsync(
-      { sub, email },
-      { expiresIn: '7d' },
-    );
+  private async signTokens(userId: string, email: string, role: string) {
+    const payload = { sub: userId, email, role };
+    const accessToken = await this.jwt.signAsync(payload, { expiresIn: '15m' });
+    const refreshToken = await this.jwt.signAsync(payload, { expiresIn: '7d' });
     return { accessToken, refreshToken };
   }
 
@@ -151,10 +150,10 @@ export class AuthService {
         fullName: params.fullName,
         passwordHash,
       },
-      select: { id: true, email: true, fullName: true },
+      select: { id: true, email: true, fullName: true, role: true },
     });
 
-    const tokens = await this.signTokens(user.id, user.email);
+    const tokens = await this.signTokens(user.id, user.email, user.role);
     return { user, ...tokens };
   }
 
