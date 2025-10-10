@@ -1,17 +1,47 @@
 import { Injectable, Logger } from '@nestjs/common';
 import * as nodemailer from 'nodemailer';
+import { verifyEmailTemplate } from 'src/template/mail-templates/verify-email';
 
 @Injectable()
 export class MailerService {
   private readonly logger = new Logger(MailerService.name);
   private transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST!,
-    port: Number(process.env.SMTP_PORT ?? 587),
+    service: 'gmail',
     secure: false,
     auth: { user: process.env.SMTP_USER!, pass: process.env.SMTP_PASS! },
-    logger: true, 
+    logger: true,
   });
+  // async sendVerify(to: string, token: string, ctx: { fullName: string }) {
+  //   const verifyUrl = `http://localhost:4000/v1/auth/verify?token=${token}`;
+  //   const info = await this.transporter.sendMail({
+  //     from: process.env.MAIL_FROM!,
+  //     to,
+  //     subject: 'Xác thực email - Booking',
+  //     html: `
+  //     <p>Xin chào ${ctx.fullName},</p>
+  //     <p>Cảm ơn bạn đã đăng ký tài khoản. Vui lòng nhấn vào liên kết sau để xác thực email của bạn:</p>
+  //     <p><a href="${verifyUrl}">${verifyUrl}</a></p>
+  //     <p>Liên kết này sẽ hết hạn sau 24 giờ.</p>
+  //   `,
+  //     text: `Xin chào ${ctx.fullName},\nVui lòng mở link này để xác thực email: ${verifyUrl}`,
+  //   });
 
+  //   this.logger.log(`Verification mail sent: ${info.messageId}`);
+  // }
+  async sendVerify(to: string, token: string, ctx: { fullName: string }) {
+    const verifyUrl = `http://localhost:4000/v1/auth/verify?token=${token}`;
+    const html = verifyEmailTemplate(ctx.fullName, verifyUrl);
+
+    const info = await this.transporter.sendMail({
+      from: process.env.MAIL_FROM!,
+      to,
+      subject: 'Xác thực email - Booking',
+      html,
+      text: `Xin chào ${ctx.fullName},\nVui lòng mở link này để xác thực email: ${verifyUrl}`,
+    });
+
+    this.logger.log(`Verification mail sent: ${info.messageId}`);
+  }
   async sendWelcome(to: string, ctx: { fullName: string }) {
     const info = await this.transporter.sendMail({
       from: process.env.MAIL_FROM!,

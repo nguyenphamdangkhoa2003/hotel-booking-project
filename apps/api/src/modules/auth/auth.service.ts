@@ -11,6 +11,7 @@ import { PrismaService } from 'src/common/prisma/prisma.service';
 import { addMinutes, isBefore } from 'date-fns';
 import * as crypto from 'crypto';
 import { MailerService } from 'src/modules/mail/mailer.service';
+import { randomBytes } from 'crypto';
 
 const RESET_TOKEN_TTL_MIN = 15;
 
@@ -24,21 +25,64 @@ export class AuthService {
   ) {}
 
   async register(email: string, password: string, fullName?: string) {
-    const existed = await this.users.findByEmail(email);
+    const existed = await this.prisma.user.findUnique({ where: { email } });
     if (existed) throw new ConflictException('Email already exists');
 
     const passwordHash = await argon2.hash(password);
-    // create() đã select bỏ passwordHash
-    const safeUser = await this.users.create({ email, passwordHash, fullName });
+    //token vf
+    const token = randomBytes(32).toString('hex');
+    const expires = new Date(Date.now() + 24 * 60 * 60 * 1000);
 
-    await this.mailer.sendWelcome(email, { fullName: fullName ?? email });
+    // create() đã select bỏ passwordHash
+    // const safeUser = await this.users.create({ email, passwordHash, fullName });
+    await this.prisma.user.create({
+      data: {
+        email,
+        passwordHash,
+        fullName,
+        emailVerified: false,
+        verifyToken: token,
+        verifyTokenExpiresAt: expires,
+      },
+    });
+    // await this.mailer.sendWelcome(email, { fullName: fullName ?? email });
+    // const tokens = await this.signTokens(
+    //   safeUser.id,
+    //   safeUser.email,
+    //   safeUser.role,
+    // );
+    // return { user: safeUser, ...tokens };
+    await this.mailer.sendVerify(email,token, { fullName: fullName ?? email });
+    return {
+      message: 'Đăng ký thành công, vui lòng kiểm tra email để xác thực',
+    };
+  }
+
+  async verifyEmail(token: string) {
+    const user = await this.prisma.user.findFirst({
+      where: { verifyToken: token },
+    });
+    if (!user) throw new BadRequestException('Token không hợp lệ');
+
+    if (user.verifyTokenExpiresAt && user.verifyTokenExpiresAt < new Date()) {
+      throw new BadRequestException('Token đã hết hạn, vui lòng đăng ký lại');
+    }
+
+    const updated = await this.prisma.user.update({
+      where: { id: user.id },
+      data: {
+        emailVerified: true,
+        verifyToken: null,
+        verifyTokenExpiresAt: null,
+      },
+    });
 
     const tokens = await this.signTokens(
-      safeUser.id,
-      safeUser.email,
-      safeUser.role,
+      updated.id,
+      updated.email,
+      updated.role,
     );
-    return { user: safeUser, ...tokens };
+    return { message: 'Xác thực email thành công', user: updated, ...tokens };
   }
 
   async login(email: string, password: string) {

@@ -5,6 +5,7 @@ import {
   HttpCode,
   Patch,
   Post,
+  Query,
   Req,
   Res,
   UseGuards,
@@ -43,6 +44,11 @@ export class AuthController {
   @ApiCreatedResponse({ description: 'Register new user' })
   async register(@Body() dto: RegisterDto) {
     return this.auth.register(dto.email, dto.password, dto.fullName);
+  }
+  @Public()
+  @Get('verify')
+  async verify(@Query('token') token: string) {
+    return this.auth.verifyEmail(token);
   }
 
   @Public()
