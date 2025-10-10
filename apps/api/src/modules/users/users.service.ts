@@ -1,24 +1,65 @@
 import { Injectable } from '@nestjs/common';
-
-type User = {
-  id: string;
-  email: string;
-  passwordHash: string;
-  fullName: string;
-};
+import { Role } from 'generated/prisma';
+import { PrismaService } from 'src/common/prisma/prisma.service';
 
 @Injectable()
 export class UsersService {
-  private users = new Map<string, User>();
+  constructor(private readonly prisma: PrismaService) {}
 
+  // Chỉ dùng nội bộ cho Auth
   async findByEmail(email: string) {
-    return [...this.users.values()].find((u) => u.email === email) ?? null;
+    return this.prisma.user.findUnique({
+      where: { email },
+    });
   }
 
-  async create(user: Omit<User, 'id'>) {
-    const id = crypto.randomUUID();
-    const created = { id, ...user };
-    this.users.set(id, created);
-    return created;
+  // Tạo user mới (lưu ý truyền passwordHash)
+  async create(params: {
+    email: string;
+    passwordHash: string;
+    fullName?: string;
+    role?: Role;
+  }) {
+    const { email, passwordHash, fullName, role } = params;
+    return this.prisma.user.create({
+      data: { email, passwordHash, fullName, role: role ?? 'USER' },
+      select: {
+        id: true,
+        email: true,
+        fullName: true,
+        role: true,
+        createdAt: true,
+      }, // không trả passwordHash
+    });
+  }
+
+  // Lấy hồ sơ public (không gồm passwordHash)
+  async findPublicById(id: string) {
+    return this.prisma.user.findUnique({
+      where: { id },
+      select: {
+        id: true,
+        email: true,
+        fullName: true,
+        role: true,
+        createdAt: true,
+        updatedAt: true,
+      },
+    });
+  }
+
+  // Cập nhật hồ sơ cơ bản
+  async updateProfile(id: string, data: { fullName?: string }) {
+    return this.prisma.user.update({
+      where: { id },
+      data,
+      select: {
+        id: true,
+        email: true,
+        fullName: true,
+        role: true,
+        updatedAt: true,
+      },
+    });
   }
 }

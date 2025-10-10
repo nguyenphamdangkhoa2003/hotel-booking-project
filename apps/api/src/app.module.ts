@@ -6,9 +6,10 @@ import { PrismaModule } from './common/prisma/prisma.module';
 import { PrismaService } from './common/prisma/prisma.service';
 import { AuthModule } from './modules/auth/auth.module';
 import { UsersService } from './modules/users/users.service';
+import { MailModule } from 'src/modules/mail/mail.module';
 
 @Module({
-  imports: [HealthModule, PrismaModule, AuthModule],
+  imports: [HealthModule, PrismaModule, AuthModule, MailModule],
   providers: [UsersService],
 })
 export class AppModule {}

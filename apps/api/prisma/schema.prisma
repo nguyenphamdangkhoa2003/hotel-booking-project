@@ -17,11 +17,25 @@ datasource db {
 model User {
   id        String   @id @default(uuid())
   email     String   @unique
-  password  String
+  passwordHash   String
   fullName  String?
   role        Role     @default(USER)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+
+    // BACK-RELATION: một user có nhiều reset tokens
+  resetTokens PasswordResetToken[]
+}
+
+model PasswordResetToken {
+  id         String   @id @default(uuid())
+  userId     String
+  tokenHash  String   // hash của token gửi qua email
+  expiresAt  DateTime
+  createdAt  DateTime @default(now())
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@index([userId])
+  @@index([expiresAt])
 }
 
 model Hotel {
@@ -42,4 +56,5 @@ enum Role {
   MANAGER
   STAFF
 }
+
 
