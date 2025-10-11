@@ -1,0 +1,87 @@
+{{!-- Base layout: responsive + bulletproof button support --}}
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="x-apple-disable-message-reformatting">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{subject}}</title>
+  <style>
+    /* Reset */
+    html, body { margin:0!important; padding:0!important; height:100%!important; width:100%!important; }
+    * { -ms-text-size-adjust:100%; -webkit-text-size-adjust:100%; }
+    table, td { mso-table-lspace:0pt; mso-table-rspace:0pt; border-collapse:collapse!important; }
+    img { -ms-interpolation-mode:bicubic; border:0; outline:none; text-decoration:none; }
+
+    /* Layout */
+    body { background:#0b1020; }
+    .wrapper { width:100%; background:#0b1020; }
+    .container { max-width:640px; margin:0 auto; }
+    .card { background:#0f172a; border:1px solid #1f2a44; border-radius:14px; }
+    .p-24 { padding:24px; }
+    .p-32 { padding:32px; }
+    .mt-8 { margin-top:8px; }
+    .mt-16 { margin-top:16px; }
+    .mt-24 { margin-top:24px; }
+    .muted { color:#94a3b8; }
+    .text { color:#e2e8f0; line-height:1.6; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; font-size:16px; }
+    .h1 { font-size:24px; line-height:1.25; font-weight:700; color:#f8fafc; margin:0 0 6px 0; }
+    .code { background:#0b1224; color:#cbd5e1; padding:6px 8px; border-radius:8px; word-break:break-all; display:inline-block; }
+
+    /* Button (non-Outlook) */
+    .btn { display:inline-block; padding:12px 18px; border-radius:12px; background:#6366f1; color:#ffffff!important; text-decoration:none; font-weight:600; }
+
+    /* Header */
+    .brand { display:flex; align-items:center; gap:10px; }
+    .brand-name { color:#e2e8f0; font-weight:700; font-size:18px; letter-spacing:.2px; }
+
+    /* Footer */
+    .divider { height:1px; background:#1f2a44; border:0; }
+
+    /* Mobile */
+    @media (max-width:600px) {
+      .p-32 { padding:20px!important; }
+      .h1 { font-size:22px!important; }
+    }
+  </style>
+  {{!-- Dark-mode meta hints for Apple Mail --}}
+  <meta name="color-scheme" content="dark">
+  <meta name="supported-color-schemes" content="dark">
+</head>
+<body>
+  {{!-- Preheader (hidden) --}}
+  {{> preheader text=preheader }}
+
+  <table role="presentation" class="wrapper" width="100%" cellpadding="0" cellspacing="0">
+    <tr><td align="center">
+      <table role="presentation" class="container" width="100%" cellpadding="0" cellspacing="0">
+        <tr><td class="p-24">
+          {{!-- Header --}}
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+              <td align="left">
+                {{> logo brandName=brandName brandUrl=brandUrl logoUrl=logoUrl}}
+              </td>
+            </tr>
+          </table>
+
+          {{!-- Card --}}
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" class="card mt-16">
+            <tr><td class="p-32">
+                {{> @partial-block }}
+            </td></tr>
+          </table>
+
+          {{!-- Footer --}}
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" class="mt-24">
+            <tr><td><hr class="divider"></td></tr>
+            <tr><td class="text muted mt-16" align="left">
+              {{> footer year=year brandName=brandName supportEmail=supportEmail address=address}}
+            </td></tr>
+          </table>
+        </td></tr>
+      </table>
+    </td></tr>
+  </table>
+</body>
+</html>

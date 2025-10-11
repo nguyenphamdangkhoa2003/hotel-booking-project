@@ -1,0 +1,24 @@
+{{#> layout-base subject=(lookup . "subject") }}
+  <table role="presentation" width="100%">
+    <tr><td class="text">
+      <h1 class="h1">Đặt lại mật khẩu</h1>
+      <p class="mt-8">Xin chào {{fullName}},</p>
+      <p class="mt-8">
+        Bạn vừa yêu cầu đặt lại mật khẩu cho tài khoản {{brandName}}. Liên kết bên dưới sẽ hết hạn sau <strong>{{minutes}} phút</strong>.
+      </p>
+
+      <div class="mt-16">
+        {{> button href=resetUrl label="Đặt lại mật khẩu"}}
+      </div>
+
+      <p class="mt-16">
+        Nếu nút không hoạt động, sao chép link này và dán vào trình duyệt:
+      </p>
+      <p class="mt-8"><span class="code">{{resetUrl}}</span></p>
+
+      <p class="muted mt-16">
+        Nếu không phải bạn, hãy bỏ qua email này.
+      </p>
+    </td></tr>
+  </table>
+{{/layout-base}}

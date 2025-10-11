@@ -65,8 +65,9 @@ export class AuthService {
 
     // FE page /verify?token=... sẽ gọi POST /auth/verify
     const verifyUrl = `${process.env.PUBLIC_WEB_URL ?? 'http://localhost:3000'}/verify?token=${rawToken}`;
-    await this.mailer.sendVerify(normalizedEmail, verifyUrl, {
+    await this.mailer.sendVerify(normalizedEmail, {
       fullName: fullName ?? normalizedEmail,
+      verifyUrl,
     });
 
     return {
@@ -156,8 +157,9 @@ export class AuthService {
     });
 
     const verifyUrl = `${process.env.PUBLIC_WEB_URL ?? 'http://localhost:3000'}/verify?token=${rawToken}`;
-    await this.mailer.sendVerify(normalizedEmail, verifyUrl, {
+    await this.mailer.sendVerify(normalizedEmail, {
       fullName: user.fullName ?? normalizedEmail,
+      verifyUrl,
     });
 
     return { message: 'Verification email resent' };

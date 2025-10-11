@@ -1,0 +1,24 @@
+{{#> layout-base subject=(lookup . "subject") }}
+  {{!-- Preheader text (ẩn) --}}
+  {{~!-- Pass vào layout qua context ở service: preheader="Chào mừng bạn đến với nền tảng đặt phòng nhanh & mượt." --}}
+
+  <table role="presentation" width="100%">
+    <tr><td class="text">
+      <h1 class="h1">Xin chào {{fullName}} 👋</h1>
+      <p class="mt-8">
+        Tài khoản của bạn đã được tạo thành công trên {{brandName}}.
+      </p>
+      <p class="mt-8">
+        Bắt đầu khám phá hàng ngàn khách sạn, ưu đãi hấp dẫn và trải nghiệm đặt phòng mượt như bơ.
+      </p>
+
+      <div class="mt-16">
+        {{> button href=ctaUrl label="Khám phá ngay"}}
+      </div>
+
+      <p class="muted mt-16">
+        Nếu bạn không tạo tài khoản, hãy bỏ qua email này.
+      </p>
+    </td></tr>
+  </table>
+{{/layout-base}}

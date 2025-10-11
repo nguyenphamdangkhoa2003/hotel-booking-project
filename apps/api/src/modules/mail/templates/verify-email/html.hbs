@@ -1,0 +1,24 @@
+{{#> layout-base subject=(lookup . "subject") }}
+  <table role="presentation" width="100%">
+    <tr><td class="text">
+      <h1 class="h1">Xác thực email</h1>
+      <p class="mt-8">Xin chào {{fullName}},</p>
+      <p class="mt-8">
+        Vui lòng bấm nút bên dưới để xác thực email và hoàn tất bảo mật tài khoản của bạn.
+      </p>
+
+      <div class="mt-16">
+        {{> button href=verifyUrl label="Xác thực email"}}
+      </div>
+
+      <p class="mt-16">
+        Nếu nút không hoạt động, sao chép link này và dán vào trình duyệt:
+      </p>
+      <p class="mt-8"><span class="code">{{verifyUrl}}</span></p>
+
+      <p class="muted mt-16">
+        Nếu bạn không đăng ký tài khoản, hãy bỏ qua email này.
+      </p>
+    </td></tr>
+  </table>
+{{/layout-base}}
