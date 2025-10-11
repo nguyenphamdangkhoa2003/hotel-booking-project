@@ -1,9 +1,55 @@
 {
-    "dashboard": {
-        "title": "Dashboard",
+    "header": {
         "menu": {
             "overview": "Overview",
             "hotels": "Hotels"
+        },
+        "button": {
+            "login": "Login",
+            "sign-up": "Sign Up",
+            "booking": "Booking"
         }
+    },
+    "hero-section": {
+        "title": "Book Hotels Fast & Easy",
+        "sub-title": "Discover thousands of hotels at the best prices and secure your stay in just seconds. A modern system with a smooth experience and user-friendly design — exactly the way you want it.",
+        "button": "Start Booking"
+    },
+    "search": {
+        "destination": {
+            "label": "Destination",
+            "placeholder": "Where are you going?"
+        },
+        "guests": "Guests",
+        "rooms": "Rooms",
+        "search": "Search",
+        "select-date": "Select date",
+        "check-in": "Check-in",
+        "check-out": "Check-out",
+        "errors": {
+            "destination": "Destination is required",
+            "guests": "At least 1 guest",
+            "rooms": "The selected dates overlap with reserved periods."
+        }
+    },
+    "team-section": {
+        "title": "Meet Our Team",
+        "description": "Our dedicated team works tirelessly to ensure you have the best hotel booking experience — from seamless search to comfortable stays.",
+        "members": [
+            {
+                "name": "Vuong Hoang",
+                "role": "Head of Product",
+                "location": "Ho Chi Minh City, Vietnam",
+                "bio": "Leads product strategy and guest experience, ensuring every search, filter, and checkout feels effortless.",
+                "avatar": "hai-nguyen"
+            },
+            {
+                "name": "Phuoc Bach",
+                "role": "Lead Frontend Engineer",
+                "location": "Da Nang, Vietnam",
+                "bio": "Builds fast, accessible interfaces with modern UI and animations so you can book in seconds.",
+                "avatar": "khoa-pham"
+            }
+        ]
     }
 }

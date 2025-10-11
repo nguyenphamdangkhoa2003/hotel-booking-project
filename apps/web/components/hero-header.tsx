@@ -9,7 +9,7 @@ import { useTranslations } from 'next-intl';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
 
 export const HeroHeader = () => {
-    const t = useTranslations('dashboard');
+    const t = useTranslations('header');
 
     const menuItems = [
         { name: t('menu.overview'), href: '#link' },
@@ -87,8 +87,8 @@ export const HeroHeader = () => {
                                     ))}
                                 </ul>
                             </div>
-                            <div>
-                                <LanguageSwitcher/>
+                            <div className="flex md:w-fit">
+                                <LanguageSwitcher />
                             </div>
                             <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
                                 <Button
@@ -97,7 +97,7 @@ export const HeroHeader = () => {
                                     size="sm"
                                     className={cn(isScrolled && 'lg:hidden')}>
                                     <Link href="#">
-                                        <span>Login</span>
+                                        <span>{t('button.login')}</span>
                                     </Link>
                                 </Button>
                                 <Button
@@ -105,7 +105,7 @@ export const HeroHeader = () => {
                                     size="sm"
                                     className={cn(isScrolled && 'lg:hidden')}>
                                     <Link href="#">
-                                        <span>Sign Up</span>
+                                        <span>{t('button.sign-up')}</span>
                                     </Link>
                                 </Button>
                                 <Button
@@ -115,7 +115,7 @@ export const HeroHeader = () => {
                                         isScrolled ? 'lg:inline-flex' : 'hidden'
                                     )}>
                                     <Link href="#">
-                                        <span>Get Started</span>
+                                        <span>{t('button.booking')}</span>
                                     </Link>
                                 </Button>
                             </div>

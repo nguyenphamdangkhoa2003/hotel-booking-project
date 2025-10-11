@@ -1,9 +1,55 @@
 {
-    "dashboard": {
-        "title": "Bảng điều khiển",
+    "header": {
         "menu": {
             "overview": "Tổng quan",
             "hotels": "Khách sạn"
+        },
+        "button": {
+            "login": "Đăng nhập",
+            "sign-up": "Đăng kí",
+            "booking": "Đặt phòng"
         }
+    },
+    "hero-section": {
+        "title": "Đặt Phòng Nhanh & Dễ",
+        "sub-title": "Khám phá hàng nghìn khách sạn với mức giá tốt nhất và đặt phòng chỉ trong vài giây. Hệ thống hiện đại, trải nghiệm mượt mà cùng giao diện thân thiện — đúng như bạn mong muốn.",
+        "button": "Đặt phòng"
+    },
+    "search": {
+        "destination": {
+            "label": "Điểm đến",
+            "placeholder": "Bạn muốn đi đâu?"
+        },
+        "guests": "Khách",
+        "rooms": "Phòng",
+        "search": "Tìm kiếm",
+        "select-date": "Chọn ngày",
+        "check-in": "Nhận phòng",
+        "check-out": "Trả phòng",
+        "errors": {
+            "destination": "Vui lòng chọn điểm đến",
+            "guests": "Cần ít nhất 1 khách",
+            "rooms": "Ngày đã chọn trùng với thời gian đã được đặt trước"
+        }
+    },
+    "team-section": {
+        "title": "Gặp Gỡ Đội Ngũ",
+        "description": "Đội ngũ tận tâm của chúng tôi luôn nỗ lực mang đến cho bạn trải nghiệm đặt phòng khách sạn tốt nhất — từ tìm kiếm dễ dàng đến kỳ nghỉ thoải mái.",
+        "members": [
+            {
+                "name": "Vương Hoàng",
+                "role": "Trưởng Bộ Phận Sản Phẩm",
+                "location": "TP. Hồ Chí Minh, Việt Nam",
+                "bio": "Dẫn dắt chiến lược sản phẩm và trải nghiệm người dùng, giúp việc tìm kiếm – lọc – thanh toán trở nên thật nhẹ nhàng.",
+                "avatar": "hai-nguyen"
+            },
+            {
+                "name": "Phước Bạch",
+                "role": "Kỹ Sư Frontend Chủ Lực",
+                "location": "Đà Nẵng, Việt Nam",
+                "bio": "Xây dựng giao diện nhanh, dễ truy cập với hiệu ứng hiện đại để bạn đặt phòng chỉ trong vài giây.",
+                "avatar": "khoa-pham"
+            }
+        ]
     }
 }
