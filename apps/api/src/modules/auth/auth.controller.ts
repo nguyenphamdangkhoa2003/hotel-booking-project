@@ -30,6 +30,8 @@ import { RolesGuard } from 'src/modules/auth/guard/roles.guard';
 import { Roles } from 'src/common/decorators/roles.decorator';
 import { Role } from '@prisma/client';
 import { Public } from 'src/common/decorators/public.decorator';
+import { VerifyEmailDto } from './dto/verify-email.dto';
+import { ResendVerificationDto } from './dto/resend-verification.dto';
 
 @ApiTags('Auth')
 @Controller('auth')
@@ -47,10 +49,14 @@ export class AuthController {
   }
   @Public()
   @Get('verify')
-  async verify(@Query('token') token: string) {
-    return this.auth.verifyEmail(token);
+  async verify(@Query() dto: VerifyEmailDto) {
+    return this.auth.verifyEmail(dto.token);
   }
-
+   @Public()
+  @Post('resend-verification')
+  async resendVerification(@Body() dto: ResendVerificationDto) {
+    return this.auth.resendVerification(dto.email);
+  }
   @Public()
   @Post('login')
   @HttpCode(200)

@@ -11,7 +11,7 @@ import { PrismaService } from 'src/common/prisma/prisma.service';
 import { addMinutes, isBefore } from 'date-fns';
 import * as crypto from 'crypto';
 import { MailerService } from 'src/modules/mail/mailer.service';
-import { randomBytes } from 'crypto';
+import { randomBytes, createHash } from 'crypto';
 
 const RESET_TOKEN_TTL_MIN = 15;
 
@@ -31,6 +31,7 @@ export class AuthService {
     const passwordHash = await argon2.hash(password);
     //token vf
     const token = randomBytes(32).toString('hex');
+    const hashedToken = createHash('sha256').update(token).digest('hex'); // hash SHA-256
     const expires = new Date(Date.now() + 24 * 60 * 60 * 1000);
 
     // create() đã select bỏ passwordHash
@@ -41,7 +42,7 @@ export class AuthService {
         passwordHash,
         fullName,
         emailVerified: false,
-        verifyToken: token,
+        verifyToken: hashedToken,
         verifyTokenExpiresAt: expires,
       },
     });
@@ -52,15 +53,16 @@ export class AuthService {
     //   safeUser.role,
     // );
     // return { user: safeUser, ...tokens };
-    await this.mailer.sendVerify(email,token, { fullName: fullName ?? email });
+    await this.mailer.sendVerify(email, token, { fullName: fullName ?? email });
     return {
       message: 'Đăng ký thành công, vui lòng kiểm tra email để xác thực',
     };
   }
 
   async verifyEmail(token: string) {
+    const hashedToken = createHash('sha256').update(token).digest('hex');
     const user = await this.prisma.user.findFirst({
-      where: { verifyToken: token },
+      where: { verifyToken: hashedToken },
     });
     if (!user) throw new BadRequestException('Token không hợp lệ');
 
@@ -75,6 +77,13 @@ export class AuthService {
         verifyToken: null,
         verifyTokenExpiresAt: null,
       },
+      select: {
+        id: true,
+        email: true,
+        fullName: true,
+        emailVerified: true,
+        role: true,
+      },
     });
 
     const tokens = await this.signTokens(
@@ -82,21 +91,70 @@ export class AuthService {
       updated.email,
       updated.role,
     );
-    return { message: 'Xác thực email thành công', user: updated, ...tokens };
+    return {
+      message: 'Xác thực email thành công',
+      user: updated,
+      ...tokens,
+    };
   }
+  async resendVerification(email: string) {
+  const user = await this.prisma.user.findUnique({ where: { email } });
+
+  if (!user) {
+    return { message: 'Email không tồn tại' };
+  }
+
+  // Nếu email đã xác minh rồi => không cần gửi lại
+  if (user.emailVerified) {
+    throw new BadRequestException('Email đã được xác minh.');
+  }
+
+  // Tạo token mới
+  const rawToken = randomBytes(32).toString('hex');
+  const hashedToken = createHash('sha256').update(rawToken).digest('hex');
+  const expires = new Date(Date.now() + 24 * 60 * 60 * 1000); // 24h
+
+  // Cập nhật lại token trong DB
+  await this.prisma.user.update({
+    where: { id: user.id },
+    data: {
+      verifyToken: hashedToken,
+      verifyTokenExpiresAt: expires,
+    },
+  });
+
+  // Gửi email xác minh mới
+  await this.mailer.sendVerify(user.email, rawToken, {
+    fullName: user.fullName ?? user.email,
+  });
+
+  return {
+    message: 'Email xác minh mới đã được gửi. Vui lòng kiểm tra hộp thư.',
+  };
+}
+
 
   async login(email: string, password: string) {
-    const user = await this.users.findByEmail(email);
-    if (!user) throw new UnauthorizedException('Invalid credentials');
+  const user = await this.users.findByEmail(email);
+  if (!user) throw new UnauthorizedException('Email hoặc mật khẩu không hợp lệ');
 
-    const ok = await argon2.verify(user.passwordHash, password);
-    if (!ok) throw new UnauthorizedException('Invalid credentials');
-
-    const tokens = await this.signTokens(user.id, user.email, user.role);
-    // Nên trả “public user”
-    const safeUser = await this.users.findPublicById(user.id);
-    return { user: safeUser, ...tokens };
+  // 1️⃣ Kiểm tra đã xác minh email chưa
+  if (!user.emailVerified) {
+    throw new UnauthorizedException('Email chưa được xác minh, vui lòng kiểm tra hộp thư.');
   }
+
+  // 2️⃣ Kiểm tra mật khẩu
+  const ok = await argon2.verify(user.passwordHash, password);
+  if (!ok) throw new UnauthorizedException('Email hoặc mật khẩu không hợp lệ');
+
+  // 3️⃣ Sinh tokens
+  const tokens = await this.signTokens(user.id, user.email, user.role);
+
+  // 4️⃣ Chỉ trả public user (không lộ passwordHash, token,…)
+  const safeUser = await this.users.findPublicById(user.id);
+
+  return { user: safeUser, ...tokens };
+}
 
   private async signTokens(userId: string, email: string, role: string) {
     const payload = { sub: userId, email, role };
