@@ -29,6 +29,8 @@ import { RolesGuard } from 'src/modules/auth/guard/roles.guard';
 import { Roles } from 'src/common/decorators/roles.decorator';
 import { Role } from '@prisma/client';
 import { Public } from 'src/common/decorators/public.decorator';
+import { VerifyEmailDto } from 'src/modules/auth/dto/verify-email.dto';
+import { ResendVerifyDto } from 'src/modules/auth/dto/resend-verify.dto';
 
 @ApiTags('Auth')
 @Controller('auth')
@@ -40,9 +42,21 @@ export class AuthController {
 
   @Public()
   @Post('register')
-  @ApiCreatedResponse({ description: 'Register new user' })
   async register(@Body() dto: RegisterDto) {
     return this.auth.register(dto.email, dto.password, dto.fullName);
+  }
+  
+  @Public()
+  @Post('verify')
+  @HttpCode(200)
+  async verify(@Body() dto: VerifyEmailDto) {
+    return this.auth.verifyEmail(dto.token);
+  }
+
+  @Public()
+  @Post('resend-verification')
+  async resend(@Body() dto: ResendVerifyDto) {
+    return this.auth.resendVerification(dto.email);
   }
 
   @Public()

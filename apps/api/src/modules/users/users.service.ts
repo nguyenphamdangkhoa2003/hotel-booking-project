@@ -42,6 +42,8 @@ export class UsersService {
         email: true,
         fullName: true,
         role: true,
+        emailVerified: true,
+        emailVerifiedAt: true,
         createdAt: true,
         updatedAt: true,
       },

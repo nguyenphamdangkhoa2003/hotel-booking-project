@@ -11,6 +11,7 @@ import { PrismaService } from 'src/common/prisma/prisma.service';
 import { addMinutes, isBefore } from 'date-fns';
 import * as crypto from 'crypto';
 import { MailerService } from 'src/modules/mail/mailer.service';
+import { hashToken } from 'src/shared/hash-token';
 
 const RESET_TOKEN_TTL_MIN = 15;
 
@@ -24,21 +25,142 @@ export class AuthService {
   ) {}
 
   async register(email: string, password: string, fullName?: string) {
-    const existed = await this.users.findByEmail(email);
-    if (existed) throw new ConflictException('Email already exists');
+    const normalizedEmail = email.toLowerCase().trim();
+    const existed = await this.prisma.user.findUnique({
+      where: { email: normalizedEmail },
+    });
+
+    if (existed && existed.emailVerified) {
+      throw new ConflictException('Email already exists');
+    }
 
     const passwordHash = await argon2.hash(password);
-    // create() đã select bỏ passwordHash
-    const safeUser = await this.users.create({ email, passwordHash, fullName });
+    const rawToken = crypto.randomBytes(32).toString('hex');
+    const tokenHash = await hashToken(rawToken);
+    const expires = new Date(Date.now() + 24 * 60 * 60 * 1000);
 
-    await this.mailer.sendWelcome(email, { fullName: fullName ?? email });
+    if (!existed) {
+      await this.prisma.user.create({
+        data: {
+          email: normalizedEmail,
+          passwordHash,
+          fullName,
+          emailVerified: false,
+          verifyTokenHash: tokenHash,
+          verifyTokenExpiresAt: expires,
+        },
+      });
+    } else {
+      // Email tồn tại nhưng chưa verify -> làm mới token
+      await this.prisma.user.update({
+        where: { id: existed.id },
+        data: {
+          passwordHash, // hoặc bỏ nếu không muốn cập nhật pass khi re-register
+          fullName,
+          verifyTokenHash: tokenHash,
+          verifyTokenExpiresAt: expires,
+        },
+      });
+    }
+
+    // FE page /verify?token=... sẽ gọi POST /auth/verify
+    const verifyUrl = `${process.env.PUBLIC_WEB_URL ?? 'http://localhost:3000'}/verify?token=${rawToken}`;
+    await this.mailer.sendVerify(normalizedEmail, verifyUrl, {
+      fullName: fullName ?? normalizedEmail,
+    });
+
+    return {
+      message:
+        'Registration successful, please check your email for verification',
+    };
+  }
+
+  async verifyEmail(rawToken: string) {
+    const users = await this.prisma.user.findMany({
+      where: { verifyTokenHash: { not: null } },
+    });
+
+    // tìm user có token khớp
+    const user = await Promise.any(
+      users.map(async (u) => {
+        const match = await argon2.verify(u.verifyTokenHash!, rawToken);
+        if (match) return u;
+        throw new Error('no match');
+      }),
+    ).catch(() => null);
+
+    if (!user) throw new BadRequestException('Invalid token');
+
+    if (user.verifyTokenExpiresAt && user.verifyTokenExpiresAt < new Date()) {
+      throw new BadRequestException(
+        'Token has expired, please request a resend.',
+      );
+    }
+
+    const updated = await this.prisma.user.update({
+      where: { id: user.id },
+      data: {
+        emailVerified: true,
+        emailVerifiedAt: new Date(),
+        verifyTokenHash: null,
+        verifyTokenExpiresAt: null,
+      },
+      select: {
+        id: true,
+        email: true,
+        fullName: true,
+        role: true,
+        emailVerified: true,
+        emailVerifiedAt: true,
+        createdAt: true,
+        updatedAt: true,
+      },
+    });
 
     const tokens = await this.signTokens(
-      safeUser.id,
-      safeUser.email,
-      safeUser.role,
+      updated.id,
+      updated.email,
+      updated.role,
     );
-    return { user: safeUser, ...tokens };
+    return {
+      message: 'Email verification successful',
+      user: updated,
+      ...tokens,
+    };
+  }
+
+  async resendVerification(email: string) {
+    const normalizedEmail = email.toLowerCase().trim();
+    const user = await this.prisma.user.findUnique({
+      where: { email: normalizedEmail },
+    });
+    if (!user) throw new BadRequestException('Email does not exist');
+
+    if (user.emailVerified) {
+      throw new BadRequestException('Email has been verified');
+    }
+
+    // (tuỳ chọn) hạn chế gửi lại quá nhanh
+    // if (user.verifyTokenExpiresAt && user.verifyTokenExpiresAt.getTime() - Date.now() > 23.5*60*60*1000) { ... }
+
+    const rawToken = crypto.randomBytes(32).toString('hex');
+    const tokenHash = await hashToken(rawToken);
+    const expires = new Date(Date.now() + 24 * 60 * 60 * 1000);
+
+    await this.prisma.user.update({
+      where: { id: user.id },
+      data: {
+        verifyTokenHash: tokenHash,
+        verifyTokenExpiresAt: expires,
+      },
+    });
+
+    const verifyUrl = `${process.env.PUBLIC_WEB_URL ?? 'http://localhost:3000'}/verify?token=${rawToken}`;
+    await this.mailer.sendVerify(normalizedEmail, verifyUrl, {
+      fullName: user.fullName ?? normalizedEmail,
+    });
+
+    return { message: 'Verification email resent' };
   }
 
   async login(email: string, password: string) {
@@ -47,6 +169,12 @@ export class AuthService {
 
     const ok = await argon2.verify(user.passwordHash, password);
     if (!ok) throw new UnauthorizedException('Invalid credentials');
+
+    if (!user.emailVerified) {
+      throw new UnauthorizedException(
+        'Email is not verified. Please check your inbox and verify your account.',
+      );
+    }
 
     const tokens = await this.signTokens(user.id, user.email, user.role);
     // Nên trả “public user”
