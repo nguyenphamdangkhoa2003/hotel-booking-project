@@ -3,23 +3,33 @@ import axios, { AxiosError, AxiosRequestConfig } from 'axios';
 import { tokenStore } from './auth-tokens';
 
 const BASE_URL = process.env.NEXT_PUBLIC_API_URL || '/api';
+const AUTH_URLS = [
+    '/auth/login',
+    '/auth/register',
+    '/auth/verify',
+    '/auth/forgot-password',
+    '/auth/reset-password',
+];
+
+const isAuthUrl = (url?: string) =>
+    !!url && AUTH_URLS.some((u) => url.includes(u));
 
 const api = axios.create({
     baseURL: BASE_URL,
     headers: { 'Content-Type': 'application/json' },
 });
 
-// Thêm access token vào header trước mỗi request
+// --- Request interceptor ---
 api.interceptors.request.use((config) => {
     const token = tokenStore.getAccess();
-    if (token) {
+    if (token && !isAuthUrl(config.url)) {
         config.headers = config.headers || {};
         (config.headers as any).Authorization = `Bearer ${token}`;
     }
     return config;
 });
 
-// ---- Refresh logic ----
+// --- Refresh logic ---
 let isRefreshing = false;
 let queue: {
     resolve: (value: unknown) => void;
@@ -48,17 +58,25 @@ async function refreshToken() {
         refreshToken: refresh,
     });
     tokenStore.setAccess(data.accessToken);
-    if (data.refreshToken) tokenStore.setRefresh(data.refreshToken); // tuỳ backend có cấp lại hay không
+    if (data.refreshToken) tokenStore.setRefresh(data.refreshToken);
     return data.accessToken;
 }
 
+// --- Response interceptor ---
 api.interceptors.response.use(
     (res) => res,
     async (error: AxiosError) => {
         const original = (error.config || {}) as AxiosRequestConfig & {
             _retry?: boolean;
         };
+
+        // Nếu không phải 401 → reject luôn
         if (error.response?.status !== 401) return Promise.reject(error);
+
+        // Nếu là auth URL (login, register, verify…) → bỏ qua refresh, trả lỗi gốc từ BE
+        if (isAuthUrl(original.url)) {
+            return Promise.reject(error);
+        }
 
         if (original._retry) {
             tokenStore.clear();

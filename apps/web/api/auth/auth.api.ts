@@ -25,7 +25,6 @@ export async function signIn(payload: { email: string; password: string }) {
 }
 
 export async function signOutServer() {
-    // (tuỳ backend có endpoint revoke refresh token)
     try {
         await api.post('/auth/logout');
     } catch {}
