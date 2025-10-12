@@ -5,34 +5,3 @@
  ⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
  We detected multiple lockfiles and selected the directory of K:\hotel-booking-project\pnpm-lock.yaml as the root directory.
  To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
-   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
- Detected additional lockfiles: 
-   * K:\hotel-booking-project\apps\web\pnpm-lock.yaml
-
-   ▲ Next.js 15.5.4 (Turbopack)
-   - Local:        http://localhost:3000
-   - Network:      http://192.168.1.5:3000
-   - Environments: .env
-
- ✓ Starting...
- ✓ Compiled middleware in 296ms
- ✓ Ready in 1991ms
- ○ Compiling /[locale] ...
- ✓ Compiled /[locale] in 5.8s
- GET /en 200 in 7436ms
- GET /en 200 in 373ms
- ✓ Compiled /favicon.ico in 490ms
- GET /favicon.ico 200 in 748ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 883ms
- GET /favicon.ico?favicon.0b3bf435.ico 200 in 343ms
- ✓ Compiled in 156ms
- ○ Compiling /[locale]/login ...
- ✓ Compiled /[locale]/login in 1101ms
- GET /en/login 200 in 1963ms
- GET /en/login 200 in 166ms
- GET /en 200 in 210ms
- ✓ Compiled in 137ms
- ✓ Compiled in 167ms
- ✓ Compiled in 184ms
- ✓ Compiled in 127ms
- GET /en 200 in 499ms

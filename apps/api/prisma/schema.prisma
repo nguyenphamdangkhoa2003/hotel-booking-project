@@ -43,15 +43,39 @@ model PasswordResetToken {
   @@index([expiresAt])
 }
 
-model Hotel {
-  id          String   @id @default(uuid())
-  name        String
-  address     String
-  description String?
-  stars       Int?
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+model Location {
+  id        String  @id @default(cuid())
+  city      String
+  country   String
+  slug      String   @unique
+  hotels    Hotel[]
 }
+
+model Hotel {
+  id         String    @id @default(cuid())
+  name       String
+  address    String
+  stars      Int
+  latitude   Float
+  longitude  Float
+  amenities  String[]  // Postgres text[]
+  priceFrom  Int?
+  priceTo    Int?
+  location   Location  @relation(fields: [locationId], references: [id])
+  locationId String
+  roomTypes  RoomType[]
+}
+
+model RoomType {
+  id        String   @id @default(cuid())
+  hotel     Hotel    @relation(fields: [hotelId], references: [id])
+  hotelId   String
+  name      String
+  amenities String[]
+  priceFrom Int?
+  priceTo   Int?
+}
+
 
 // =================== Enum ===================
 

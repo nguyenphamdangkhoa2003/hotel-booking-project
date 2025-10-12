@@ -6,6 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+    "meili:seed": "ts-node -r tsconfig-paths/register ./scripts/seed-search.ts",
     "dev": "nest start --watch",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
@@ -22,6 +23,7 @@
   },
   "dependencies": {
     "@nestjs/common": "^11.0.1",
+    "@nestjs/config": "^4.0.2",
     "@nestjs/core": "^11.0.1",
     "@nestjs/jwt": "^11.0.0",
     "@nestjs/passport": "^11.0.5",
@@ -35,6 +37,7 @@
     "date-fns": "^4.1.0",
     "handlebars": "^4.7.8",
     "install": "^0.13.0",
+    "meilisearch": "^0.53.0",
     "nodemailer": "^7.0.9",
     "passport": "^0.7.0",
     "passport-google-oauth20": "^2.0.0",
@@ -53,7 +56,7 @@
     "@types/date-fns": "^2.6.3",
     "@types/express": "^5.0.3",
     "@types/jest": "^30.0.0",
-    "@types/node": "^22.10.7",
+    "@types/node": "^22.18.8",
     "@types/passport-google-oauth20": "^2.0.16",
     "@types/passport-jwt": "^4.0.1",
     "@types/supertest": "^6.0.2",
