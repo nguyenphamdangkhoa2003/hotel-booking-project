@@ -15,6 +15,7 @@ import { Logo } from '@/components/logo';
 import api from '@/lib/axios';
 import { tokenStore } from '@/lib/auth-tokens';
 import { useRouter } from 'next/navigation';
+import { useAuth } from '@/app/(providers)/auth-provider';
 // Nếu có logo riêng, import vào đây:
 
 const schema = z.object({
@@ -25,6 +26,7 @@ const schema = z.object({
 type FormValues = z.infer<typeof schema>;
 
 export default function LoginForm() {
+    const { refetchMe } = useAuth();
     const router = useRouter();
     const form = useForm<FormValues>({
         resolver: zodResolver(schema),
@@ -41,8 +43,9 @@ export default function LoginForm() {
             return data;
         },
         retry: false,
-        onSuccess: () => {
+        onSuccess: async () => {
             toast.success('Đăng nhập thành công!');
+            await refetchMe();
             router.push('/');
         },
         onError: (err: any) => {

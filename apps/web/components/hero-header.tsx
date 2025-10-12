@@ -38,7 +38,7 @@ export const HeroHeader = () => {
         model: undefined, // nếu có, bạn truyền vào
     };
     return (
-        <header suppressHydrationWarning>
+        <header>
             <nav
                 data-state={menuState && 'active'}
                 className="fixed z-20 w-full px-2">

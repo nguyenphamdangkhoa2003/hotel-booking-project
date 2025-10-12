@@ -41,7 +41,7 @@ export default async function RootLayout({ children, params }: Props) {
     const messages = (await import(`../../messages/${locale}.json`)).default;
 
     return (
-        <html lang={locale}>
+        <html lang={locale} suppressHydrationWarning>
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
                 <NextIntlClientProvider locale={locale} messages={messages}>

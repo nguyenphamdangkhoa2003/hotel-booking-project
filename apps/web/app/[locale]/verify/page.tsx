@@ -3,7 +3,6 @@
 import * as React from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { useQuery, useMutation } from '@tanstack/react-query';
-
 import Loader from '@/components/kokonutui/loader';
 import ResultCard from '@/components/result-card';
 import { Button } from '@/components/ui/button';
