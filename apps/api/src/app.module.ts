@@ -8,9 +8,11 @@ import { AuthModule } from './modules/auth/auth.module';
 import { UsersService } from './modules/users/users.service';
 import { MailModule } from 'src/modules/mail/mail.module';
 import { SyncHotelsCommand } from 'src/command/sync-hotels.command';
+import { SearchModule } from 'src/modules/search/search.module';
+import { MeilisearchModule } from 'src/modules/search/meilisearch.module';
 
 @Module({
-  imports: [HealthModule, PrismaModule, AuthModule, MailModule],
+  imports: [HealthModule, PrismaModule, AuthModule, MailModule, SearchModule, MeilisearchModule],
   providers: [UsersService, SyncHotelsCommand],
 })
 export class AppModule {}

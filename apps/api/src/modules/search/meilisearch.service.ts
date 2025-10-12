@@ -9,7 +9,9 @@ export class MeilisearchService {
   constructor(@Inject(MEILI_CLIENT) private readonly client: MeiliSearch) {
     this.hotelsIndex = this.client.index('hotels');
   }
-
+  async onModuleInit() {
+    await this.ensureIndexes();
+  }
   async ensureIndexes() {
     await this.hotelsIndex.updateFilterableAttributes([
       'city',
@@ -18,6 +20,7 @@ export class MeilisearchService {
       'priceFrom',
       'priceTo',
       'amenities',
+      'locationId',
     ]);
     await this.hotelsIndex.updateSearchableAttributes([
       'name',
@@ -34,5 +37,9 @@ export class MeilisearchService {
 
   async clearHotels() {
     await this.hotelsIndex.deleteAllDocuments();
+  }
+
+  getHotelsIndex(): Index {
+    return this.hotelsIndex;
   }
 }
