@@ -67,7 +67,7 @@ export class AuthController {
     return this.auth.login(dto.email, dto.password);
   }
 
-  @Get('profile')
+  @Get('me')
   @UseGuards(JwtAuthGuard)
   @ApiBearerAuth('access-token')
   @ApiOkResponse({ description: 'Get current profile' })

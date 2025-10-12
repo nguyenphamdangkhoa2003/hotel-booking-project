@@ -7,9 +7,13 @@ import React from 'react';
 import { cn } from '@/lib/utils';
 import { useTranslations } from 'next-intl';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
+import { useAuth } from '@/app/(providers)/auth-provider';
+import ProfileDropdown from '@/components/kokonutui/profile-dropdown';
+import avtTempSrc from '../public/avatar-placeholder.png';
 
 export const HeroHeader = () => {
     const t = useTranslations('header');
+    const { isAuthenticated, isLoading, user, logout } = useAuth();
 
     const menuItems = [
         { name: t('menu.overview'), href: '#link' },
@@ -26,8 +30,15 @@ export const HeroHeader = () => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    const profileData = {
+        name: user?.name || user?.email?.split('@')[0] || 'User',
+        email: user?.email || '',
+        avatar: user?.avatarUrl || avtTempSrc, // đổi theo field của bạn
+        model: undefined, // nếu có, bạn truyền vào
+    };
     return (
-        <header>
+        <header suppressHydrationWarning>
             <nav
                 data-state={menuState && 'active'}
                 className="fixed z-20 w-full px-2">
@@ -87,37 +98,68 @@ export const HeroHeader = () => {
                                     ))}
                                 </ul>
                             </div>
-                            <div className="flex md:w-fit">
-                                <LanguageSwitcher />
-                            </div>
+
                             <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
-                                <Button
-                                    asChild
-                                    variant="outline"
-                                    size="sm"
-                                    className={cn(isScrolled && 'lg:hidden')}>
-                                    <Link href="#">
-                                        <span>{t('button.login')}</span>
-                                    </Link>
-                                </Button>
-                                <Button
-                                    asChild
-                                    size="sm"
-                                    className={cn(isScrolled && 'lg:hidden')}>
-                                    <Link href="#">
-                                        <span>{t('button.sign-up')}</span>
-                                    </Link>
-                                </Button>
-                                <Button
-                                    asChild
-                                    size="sm"
-                                    className={cn(
-                                        isScrolled ? 'lg:inline-flex' : 'hidden'
-                                    )}>
-                                    <Link href="#">
-                                        <span>{t('button.booking')}</span>
-                                    </Link>
-                                </Button>
+                                {/* 1) Đang tải trạng thái → placeholders */}
+                                {isLoading && (
+                                    <>
+                                        <Button
+                                            variant="outline"
+                                            size="sm"
+                                            disabled
+                                            className={cn(
+                                                isScrolled && 'lg:hidden'
+                                            )}>
+                                            {t('button.login')}
+                                        </Button>
+                                        <Button
+                                            size="sm"
+                                            disabled
+                                            className={cn(
+                                                isScrolled && 'lg:hidden'
+                                            )}>
+                                            {t('button.sign-up')}
+                                        </Button>
+                                    </>
+                                )}
+
+                                {/* 2) Chưa đăng nhập → giữ Login / Sign up */}
+                                {!isLoading && !isAuthenticated && (
+                                    <>
+                                        <Button
+                                            asChild
+                                            variant="outline"
+                                            size="sm"
+                                            className={cn(
+                                                isScrolled && 'lg:hidden'
+                                            )}>
+                                            <Link href="/login">
+                                                <span>{t('button.login')}</span>
+                                            </Link>
+                                        </Button>
+                                        <Button
+                                            asChild
+                                            size="sm"
+                                            className={cn(
+                                                isScrolled && 'lg:hidden'
+                                            )}>
+                                            <Link href="/register">
+                                                <span>
+                                                    {t('button.sign-up')}
+                                                </span>
+                                            </Link>
+                                        </Button>
+                                    </>
+                                )}
+
+                                {/* 3) ĐÃ đăng nhập → menu user + nút Booking khi scroll */}
+                                {!isLoading && isAuthenticated && (
+                                    <ProfileDropdown
+                                        data={profileData}
+                                        onLogout={logout}
+                                        className="min-w-[240px]"
+                                    />
+                                )}
                             </div>
                         </div>
                     </div>

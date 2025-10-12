@@ -8,7 +8,7 @@ import { Toaster } from 'sonner';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
-import { setRequestLocale } from 'next-intl/server';
+import AuthProvider from '@/app/(providers)/auth-provider';
 
 const geistSans = Geist({
     variable: '--font-geist-sans',
@@ -47,12 +47,16 @@ export default async function RootLayout({ children, params }: Props) {
                 <NextIntlClientProvider locale={locale} messages={messages}>
                     <section className="flex min-h-screen bg-zinc-50 dark:bg-zinc-900">
                         <div className="flex flex-col flex-1">
-                            <HeroHeader />
-                            <div className="p-6 space-y-4">
-                                <Breadcrumb />
-                                <Providers>{children}</Providers>
-                                <Toaster />
-                            </div>
+                            <Providers>
+                                <AuthProvider>
+                                    <HeroHeader />
+                                    <div className="p-6 space-y-4">
+                                        <Breadcrumb />
+                                        {children}
+                                        <Toaster />
+                                    </div>
+                                </AuthProvider>
+                            </Providers>
                         </div>
                     </section>
                 </NextIntlClientProvider>
