@@ -71,11 +71,35 @@ model RoomType {
   hotel     Hotel    @relation(fields: [hotelId], references: [id])
   hotelId   String
   name      String
+  capacity     Int
+  basePrice    Int
   amenities String[]
-  priceFrom Int?
-  priceTo   Int?
+  area         Float?     
+  bedType      String?    
+  refundable   Boolean?   
+  inventories  Inventory[]
+  prices       PriceCalendar[]
 }
 
+model Inventory {
+  id         String   @id @default(cuid())
+  roomType   RoomType @relation(fields: [roomTypeId], references: [id])
+  roomTypeId String
+  date       DateTime
+  available  Int      // số phòng còn cho ngày đó
+
+  @@unique([roomTypeId, date]) // tránh ghi trùng ngày
+}
+
+model PriceCalendar {
+  id         String   @id @default(cuid())
+  roomType   RoomType @relation(fields: [roomTypeId], references: [id])
+  roomTypeId String
+  date       DateTime
+  price      Int      // VND / đêm
+
+  @@unique([roomTypeId, date])
+}
 
 // =================== Enum ===================
 

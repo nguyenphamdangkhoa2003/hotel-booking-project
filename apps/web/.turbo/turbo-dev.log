@@ -11,10 +11,15 @@
 
    ▲ Next.js 15.5.4 (Turbopack)
    - Local:        http://localhost:3000
-   - Network:      http://192.168.1.2:3000
+   - Network:      http://192.168.1.3:3000
    - Environments: .env
 
  ✓ Starting...
- ✓ Compiled middleware in 458ms
- ✓ Ready in 2.6s
- ELIFECYCLE  Command failed with exit code 3221225786.
+ ✓ Compiled middleware in 354ms
+ ✓ Ready in 2.8s
+ ○ Compiling /[locale] ...
+ ✓ Compiled /[locale] in 8.6s
+ GET /en 200 in 10843ms
+ ○ Compiling /[locale]/login ...
+ ✓ Compiled /[locale]/login in 1113ms
+ GET /en/login 200 in 1931ms
