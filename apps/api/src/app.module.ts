@@ -13,6 +13,7 @@ import { AppCacheModule } from 'src/modules/cache/cache.module';
 import { ThrottlerModule } from '@nestjs/throttler';
 import { ThrottlerStorageRedisService } from '@nest-lab/throttler-storage-redis';
 import { AvailabilityModule } from 'src/modules/availability/availability.module';
+import { CloundinaryModule } from './modules/cloundinary/cloundinary.module';
 
 @Module({
   imports: [
@@ -42,6 +43,7 @@ import { AvailabilityModule } from 'src/modules/availability/availability.module
         }),
       }),
     }),
+    CloundinaryModule,
   ],
   providers: [UsersService, SyncHotelsCommand],
 })
