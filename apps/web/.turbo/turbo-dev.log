@@ -15,11 +15,101 @@
    - Environments: .env
 
  ✓ Starting...
- ✓ Compiled middleware in 354ms
- ✓ Ready in 2.8s
+ ✓ Compiled middleware in 316ms
+ ✓ Ready in 1985ms
+ ○ Compiling /_not-found/page ...
+ ✓ Compiled /_not-found/page in 3s
+ GET /en/auth/callback 404 in 3434ms
+ ✓ Compiled /favicon.ico in 235ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 561ms
+ GET /en/auth/callback 404 in 111ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 295ms
+ ○ Compiling /[locale]/callback ...
+ ✓ Compiled /[locale]/callback in 2.9s
+ GET /en/callback 200 in 4299ms
+ ✓ Compiled in 472ms
+ ✓ Compiled /[locale]/callback in 126ms
+ GET /en/callback 200 in 431ms
+ ⚠ Fast Refresh had to perform a full reload when ./apps/web/app/[locale]/(auth)/callback/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ✓ Compiled in 88ms
+ GET /en/callback 200 in 537ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 306ms
+ ⚠ Fast Refresh had to perform a full reload when ./apps/web/app/[locale]/(auth)/callback/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+ ✓ Compiled in 184ms
+ GET /en/callback 200 in 788ms
+ GET /api/me 404 in 257ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 437ms
  ○ Compiling /[locale] ...
- ✓ Compiled /[locale] in 8.6s
- GET /en 200 in 10843ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 410ms
+ ✓ Compiled /[locale] in 3.4s
+ GET /en 200 in 4102ms
+ GET /favicon.ico?favicon.0b3bf435.ico 200 in 312ms
+ ✓ Compiled in 115ms
+ ✓ Compiled in 127ms
+ ✓ Compiled in 111ms
+ ✓ Compiled in 111ms
+ ✓ Compiled in 104ms
+ GET /en 200 in 490ms
+ GET /favicon.ico 200 in 509ms
+ ✓ Compiled in 96ms
+ GET /en 200 in 274ms
+ GET /en 200 in 119ms
+ ✓ Compiled in 95ms
+ ✓ Compiled in 243ms
+ GET /en 200 in 356ms
  ○ Compiling /[locale]/login ...
- ✓ Compiled /[locale]/login in 1113ms
- GET /en/login 200 in 1931ms
+ ✓ Compiled /[locale]/login in 1011ms
+ GET /en/login 200 in 1736ms
+ ✓ Compiled /[locale]/callback in 70ms
+ GET /en/callback 200 in 1234ms
+ GET /en 200 in 165ms
+ GET /en 200 in 105ms
+ ✓ Compiled in 122ms
+ ✓ Compiled in 150ms
+ GET /en 200 in 131ms
+ ✓ Compiled in 116ms
+ ✓ Compiled in 151ms
+ ✓ Compiled in 87ms
+ ✓ Compiled in 83ms
+ ✓ Compiled in 83ms
+ ✓ Compiled in 104ms
+ GET /en/login 200 in 131ms
+ ✓ Compiled /[locale]/callback in 92ms
+ GET /en/callback 200 in 1179ms
+ GET /en 200 in 168ms
+ ✓ Compiled in 98ms
+ GET /en/login 200 in 105ms
+ GET /en/callback 200 in 1147ms
+ GET /en 200 in 181ms
+ ✓ Compiled in 99ms
+ GET /en/login 200 in 127ms
+ GET /en/callback 200 in 1045ms
+ GET /en 200 in 158ms
+ ✓ Compiled in 149ms
+ GET /en 200 in 201ms
+ GET /en 200 in 155ms
+ ✓ Compiled in 131ms
+ GET /en 200 in 646ms
+ GET /en 200 in 236ms
+ ✓ Compiled in 119ms
+ GET /en 200 in 322ms
+ GET /en 200 in 135ms
+ ✓ Compiled in 98ms
+ ✓ Compiled /[locale]/login in 43ms
+ GET /en/login 200 in 136ms
+ ✓ Compiled /[locale]/callback in 88ms
+ GET /en/callback 200 in 989ms
+ GET /en 200 in 156ms
+ ✓ Compiled in 130ms
+ GET /en 200 in 146ms
+ ✓ Compiled in 111ms
+ ✓ Compiled in 109ms
+ GET /en 200 in 122ms
+ ✓ Compiled in 133ms
+ GET /en 200 in 125ms
+ ✓ Compiled in 104ms
+ GET /en 200 in 169ms
+ ✓ Compiled in 177ms
+ GET /en 404 in 114ms
+ GET /en 200 in 411ms
+ GET /favicon.ico 200 in 350ms

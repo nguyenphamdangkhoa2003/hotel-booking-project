@@ -124,7 +124,7 @@ export class AuthController {
       });
 
     // Tuỳ FE: có thể redirect kèm token qua URL fragment
-    const redirect = `${process.env.PUBLIC_WEB_URL}/auth/callback#access=${accessToken}&refresh=${refreshToken}`;
+    const redirect = `${process.env.PUBLIC_WEB_URL}/callback#access=${accessToken}&refresh=${refreshToken}`;
     return res.redirect(redirect);
   }
 
