@@ -1,9 +1,4 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
+// =================== Generator & Datasource ===================
 generator client {
   provider = "prisma-client-js"
 }
@@ -13,32 +8,55 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+// =================== Enums ===================
+enum Role {
+  USER
+  ADMIN
+  MANAGER
+  STAFF
+}
+
+enum ImageKind {
+  COVER     // Ảnh bìa
+  GALLERY   // Ảnh gallery
+  AVATAR    // Ảnh đại diện (dùng cho User)
+  BANNER
+  MAP
+}
+
+// =================== Core Models ===================
 model User {
-  id        String   @id @default(uuid())
-  email     String   @unique
-  passwordHash   String
-  fullName  String?
-  role        Role     @default(USER)
+  id                 String   @id @default(uuid())
+  email              String   @unique
+  passwordHash       String
+  fullName           String?
+  role               Role     @default(USER)
 
   emailVerified         Boolean   @default(false)
   emailVerifiedAt       DateTime?
   verifyTokenHash       String?   @unique
   verifyTokenExpiresAt  DateTime?
 
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  // Avatar: tham chiếu 1-1 đến ImageAsset (nếu có)
+  avatarId           String?
+  avatar             ImageAsset? @relation(fields: [avatarId], references: [id], onDelete: SetNull)
 
-    // BACK-RELATION: một user có nhiều reset tokens
-  resetTokens PasswordResetToken[]
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  // BACK-RELATION
+  resetTokens        PasswordResetToken[]
 }
 
 model PasswordResetToken {
   id         String   @id @default(uuid())
   userId     String
-  tokenHash  String   // hash của token gửi qua email
+  tokenHash  String
   expiresAt  DateTime
   createdAt  DateTime @default(now())
+
   user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
   @@index([userId])
   @@index([expiresAt])
 }
@@ -48,6 +66,7 @@ model Location {
   city      String
   country   String
   slug      String   @unique
+
   hotels    Hotel[]
 }
 
@@ -61,24 +80,33 @@ model Hotel {
   amenities  String[]  // Postgres text[]
   priceFrom  Int?
   priceTo    Int?
+
   location   Location  @relation(fields: [locationId], references: [id])
   locationId String
+
   roomTypes  RoomType[]
+
+  // Ảnh Hotel (cover + gallery) thông qua bảng nối
+  images     HotelImage[]
 }
 
 model RoomType {
-  id        String   @id @default(cuid())
-  hotel     Hotel    @relation(fields: [hotelId], references: [id])
-  hotelId   String
-  name      String
+  id           String     @id @default(cuid())
+  hotel        Hotel      @relation(fields: [hotelId], references: [id])
+  hotelId      String
+  name         String
   capacity     Int
   basePrice    Int
-  amenities String[]
-  area         Float?     
-  bedType      String?    
-  refundable   Boolean?   
+  amenities    String[]
+  area         Float?
+  bedType      String?
+  refundable   Boolean?
+
   inventories  Inventory[]
   prices       PriceCalendar[]
+
+  // Ảnh RoomType (cover + gallery) thông qua bảng nối
+  images       RoomTypeImage[]
 }
 
 model Inventory {
@@ -86,9 +114,9 @@ model Inventory {
   roomType   RoomType @relation(fields: [roomTypeId], references: [id])
   roomTypeId String
   date       DateTime
-  available  Int      // số phòng còn cho ngày đó
+  available  Int
 
-  @@unique([roomTypeId, date]) // tránh ghi trùng ngày
+  @@unique([roomTypeId, date])
 }
 
 model PriceCalendar {
@@ -96,18 +124,79 @@ model PriceCalendar {
   roomType   RoomType @relation(fields: [roomTypeId], references: [id])
   roomTypeId String
   date       DateTime
-  price      Int      // VND / đêm
+  price      Int
 
   @@unique([roomTypeId, date])
 }
 
-// =================== Enum ===================
+// =================== Image System ===================
+// 1) Kho ảnh dùng chung: lưu thông tin từ Cloudinary
+model ImageAsset {
+  id         String   @id @default(cuid())
 
-enum Role {
-  USER
-  ADMIN
-  MANAGER
-  STAFF
+  // Cloudinary core
+  publicId   String   @unique        // ví dụ: "stayra/hotels/h1/cover_abc123"
+  url        String                   // http URL (có thể dùng secureUrl khi cần)
+  secureUrl  String?                  // https URL
+  format     String?                  // jpg, webp, png...
+  width      Int?
+  height     Int?
+  bytes      Int?
+  folder     String?                  // ví dụ: "stayra/hotels/h1"
+  version    Int?
+  etag       String?
+
+  // SEO/UX
+  alt        String?
+  caption    String?
+  placeholder String?                 // base64 LQIP/blurDataURL
+  metadata   Json?                    // lưu raw response Cloudinary nếu cần
+
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  // Back-relations từ các bảng nối
+  hotelImages     HotelImage[]
+  roomTypeImages  RoomTypeImage[]
+
+  // Back-relation từ User avatar (1-1 optional)
+  users           User[] // thông qua User.avatarId
+}
+
+// 2) Bảng nối ảnh cho Hotel (nhiều ảnh, phân loại, sắp xếp)
+model HotelImage {
+  id        String     @id @default(cuid())
+  hotelId   String
+  imageId   String
+  kind      ImageKind  @default(GALLERY) // COVER hoặc GALLERY
+  isPrimary Boolean    @default(false)   // đánh dấu ảnh chính (cover)
+  sortOrder Int        @default(0)       // phục vụ sắp xếp gallery
+
+  hotel     Hotel      @relation(fields: [hotelId], references: [id], onDelete: Cascade)
+  image     ImageAsset @relation(fields: [imageId], references: [id], onDelete: Cascade)
+
+  @@unique([hotelId, imageId])
+  @@index([hotelId, sortOrder])
+  @@index([hotelId, kind])
+  @@index([imageId])
+}
+
+// 3) Bảng nối ảnh cho RoomType
+model RoomTypeImage {
+  id         String     @id @default(cuid())
+  roomTypeId String
+  imageId    String
+  kind       ImageKind  @default(GALLERY)
+  isPrimary  Boolean    @default(false)
+  sortOrder  Int        @default(0)
+
+  roomType   RoomType   @relation(fields: [roomTypeId], references: [id], onDelete: Cascade)
+  image      ImageAsset @relation(fields: [imageId], references: [id], onDelete: Cascade)
+
+  @@unique([roomTypeId, imageId])
+  @@index([roomTypeId, sortOrder])
+  @@index([roomTypeId, kind])
+  @@index([imageId])
 }
 
 

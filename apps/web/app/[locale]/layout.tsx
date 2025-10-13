@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import '../globals.css';
 import { HeroHeader } from '@/components/hero-header';
-import { Breadcrumb } from '@/components/ui/breadcrumb';
 import Providers from '@/app/[locale]/providers';
 import { Toaster } from 'sonner';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
@@ -51,7 +50,6 @@ export default async function RootLayout({ children, params }: Props) {
                                 <AuthProvider>
                                     <HeroHeader />
                                     <div className="p-6 space-y-4">
-                                        <Breadcrumb />
                                         {children}
                                         <Toaster />
                                     </div>

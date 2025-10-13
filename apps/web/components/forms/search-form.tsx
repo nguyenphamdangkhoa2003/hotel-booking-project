@@ -5,7 +5,7 @@ import { useForm, type SubmitHandler } from 'react-hook-form';
 import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 
-import { format } from 'date-fns';
+import { format, startOfDay } from 'date-fns';
 
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -31,19 +31,39 @@ export default function SearchForm() {
     const router = useRouter();
     const t = useTranslations('search');
 
-    const Schema = z.object({
-        destination: z.string().min(1, { message: t('errors.destination') }),
-        guests: z.coerce
-            .number()
-            .int()
-            .min(1, { message: t('errors.guests') }),
-        rooms: z.coerce
-            .number()
-            .int()
-            .min(1, { message: t('errors.rooms') }),
-        checkIn: z.date().optional(),
-        checkOut: z.date().optional(),
-    });
+    const Schema = z
+        .object({
+            destination: z
+                .string()
+                .min(1, { message: t('errors.destination') }),
+            guests: z.coerce
+                .number()
+                .int()
+                .min(1, { message: t('errors.guests') }),
+            rooms: z.coerce
+                .number()
+                .int()
+                .min(1, { message: t('errors.rooms') }),
+            checkIn: z.date(),
+            checkOut: z.date(),
+        })
+        .superRefine((val, ctx) => {
+            if (startOfDay(val.checkIn) < startOfDay(new Date())) {
+                ctx.addIssue({
+                    code: z.ZodIssueCode.custom,
+                    path: ['checkIn'],
+                    message: 'Check-in date cannot be past',
+                });
+            }
+            // check-out phải sau check-in ít nhất 1 đêm
+            if (startOfDay(val.checkOut) <= startOfDay(val.checkIn)) {
+                ctx.addIssue({
+                    code: z.ZodIssueCode.custom,
+                    path: ['checkOut'],
+                    message: 'Check-out date must be after check-in date',
+                });
+            }
+        });
 
     type FormInput = z.input<typeof Schema>;
     type FormValues = z.output<typeof Schema>;
@@ -52,10 +72,10 @@ export default function SearchForm() {
         resolver: zodResolver(Schema),
         defaultValues: {
             destination: '',
-            guests: 2,
+            guests: 1,
             rooms: 1,
-            checkIn: undefined,
-            checkOut: undefined,
+            checkIn: new Date(),
+            checkOut: new Date(),
         },
         mode: 'onSubmit',
     });
@@ -187,7 +207,7 @@ export default function SearchForm() {
                                 <PopoverContent align="start" className="p-0">
                                     <Calendar
                                         mode="single"
-                                        selected={field.value}
+                                        selected={field.value ?? new Date()}
                                         onSelect={(d) => field.onChange(d)}
                                         initialFocus
                                     />
@@ -204,7 +224,7 @@ export default function SearchForm() {
                     name="checkOut"
                     render={({ field }) => (
                         <FormItem className="md:col-span-6">
-                            <FormLabel>{t("check-out")}</FormLabel>
+                            <FormLabel>{t('check-out')}</FormLabel>
                             <Popover>
                                 <PopoverTrigger asChild>
                                     <FormControl>

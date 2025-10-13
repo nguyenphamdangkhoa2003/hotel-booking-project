@@ -45,7 +45,7 @@ export class AuthController {
   async register(@Body() dto: RegisterDto) {
     return this.auth.register(dto.email, dto.password, dto.fullName);
   }
-  
+
   @Public()
   @Post('verify')
   @HttpCode(200)
@@ -71,8 +71,10 @@ export class AuthController {
   @UseGuards(JwtAuthGuard)
   @ApiBearerAuth('access-token')
   @ApiOkResponse({ description: 'Get current profile' })
-  async profile(@Req() req: any) {
-    return req.user;
+  async me(@Req() req) {
+    const userId = req.user.id; // lấy từ JWT payload
+    const user = await this.auth.me(userId);
+    return { user };
   }
 
   @Patch('profile')
@@ -112,8 +114,8 @@ export class AuthController {
   @Get('google/callback')
   @UseGuards(GoogleAuthGuard)
   async googleCallback(@Req() req: any, @Res() res: Response) {
-    const { email, fullName, providerId } = req.user;
-
+    const { email, fullName, providerId, avatarUrl } = req.user;
+    console.log('Profile Google:', req.user);
     // Tạo/tìm user trong DB
     const { user, accessToken, refreshToken } =
       await this.auth.socialLoginOrRegister({
@@ -121,6 +123,7 @@ export class AuthController {
         email,
         fullName,
         providerId,
+        avatarUrl,
       });
 
     // Tuỳ FE: có thể redirect kèm token qua URL fragment

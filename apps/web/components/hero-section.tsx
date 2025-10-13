@@ -11,6 +11,7 @@ import seaSrc from '../public/hd-wallpapers-of-sea.jpg';
 import { useTranslations } from 'next-intl';
 import SearchForm from '@/components/forms/search-form';
 import { TeamGridSection } from '@/components/team-grid-section.';
+import { Variants } from 'framer-motion';
 
 const transitionVariants = {
     item: {
@@ -67,17 +68,19 @@ export default function HeroSection() {
                                 </TextEffect>
 
                                 <AnimatedGroup
-                                    variants={{
-                                        container: {
-                                            visible: {
-                                                transition: {
-                                                    staggerChildren: 0.05,
-                                                    delayChildren: 0.75,
+                                    variants={
+                                        {
+                                            container: {
+                                                visible: {
+                                                    transition: {
+                                                        staggerChildren: 0.05,
+                                                        delayChildren: 0.75,
+                                                    },
                                                 },
                                             },
-                                        },
-                                        ...transitionVariants,
-                                    }}
+                                            ...transitionVariants,
+                                        } as Variants
+                                    }
                                     className="mt-12 flex items-center gap-2">
                                     <div
                                         key={1}
@@ -97,17 +100,19 @@ export default function HeroSection() {
                             </div>
                         </div>
                         <AnimatedGroup
-                            variants={{
-                                container: {
-                                    visible: {
-                                        transition: {
-                                            staggerChildren: 0.05,
-                                            delayChildren: 0.75,
+                            variants={
+                                {
+                                    container: {
+                                        visible: {
+                                            transition: {
+                                                staggerChildren: 0.05,
+                                                delayChildren: 0.75,
+                                            },
                                         },
                                     },
-                                },
-                                ...transitionVariants,
-                            }}>
+                                    ...transitionVariants,
+                                } as Variants
+                            }>
                             <div className="mask-b-from-55% relative -mr-56 mt-8 overflow-hidden px-2 sm:mr-0 sm:mt-12 md:mt-20">
                                 <div className="inset-shadow-2xs ring-background dark:inset-shadow-white/20 bg-background relative mx-auto max-w-5xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
                                     <Image
@@ -127,14 +132,14 @@ export default function HeroSection() {
                                 </div>
                             </div>
                         </AnimatedGroup>
-                        <div className="mx-auto max-w-5xl px-6 absolute bottom-1 left-0 right-0">
+                        <div className="mx-auto max-w-5xl absolute bottom-1 left-0 right-0">
                             <div className="rounded-2xl border bg-card/80 p-4 md:p-6 shadow-xl ring-1 ring-border backdrop-blur supports-[backdrop-filter]:bg-background/80">
                                 <SearchForm />
                             </div>
                         </div>
                     </div>
                 </section>
-                <div className='mt-24'>
+                <div className="mt-24">
                     <TeamGridSection />
                 </div>
             </main>

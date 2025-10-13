@@ -12,6 +12,7 @@ import { addMinutes, isBefore } from 'date-fns';
 import * as crypto from 'crypto';
 import { MailerService } from 'src/modules/mail/mailer.service';
 import { hashToken } from 'src/shared/hash-token';
+import { Prisma } from '@prisma/client';
 
 const RESET_TOKEN_TTL_MIN = 15;
 
@@ -259,29 +260,138 @@ export class AuthService {
     return { ok: true };
   }
 
+  normalizeGoogleAvatarUrl(url: string) {
+    try {
+      const u = new URL(url);
+      // nhiều provider trả param "sz" / "s" -> có thể giữ nguyên hoặc ép kích thước
+      // u.searchParams.set('sz', '256');
+      return u.toString();
+    } catch {
+      return url;
+    }
+  }
+
   async socialLoginOrRegister(params: {
     provider: 'google';
     email?: string;
     fullName?: string;
     providerId: string;
+    avatarUrl?: string;
   }) {
-    if (!params.email)
+    if (!params.email) {
       throw new BadRequestException('Email is required from provider');
+    }
 
-    // tạo password ngẫu nhiên cho tài khoản mới
+    const email = params.email.toLowerCase().trim();
+
+    // tạo password ngẫu nhiên cho tài khoản mới (không dùng để đăng nhập)
     const randomPw = crypto.randomBytes(24).toString('hex');
     const passwordHash = await argon2.hash(randomPw);
 
-    const user = await this.prisma.user.upsert({
-      where: { email: params.email },
-      update: {},
-      create: {
-        email: params.email,
-        fullName: params.fullName,
-        passwordHash,
+    // Tìm user trước
+    let user = await this.prisma.user.findUnique({
+      where: { email },
+      select: {
+        id: true,
+        email: true,
+        fullName: true,
+        role: true,
+        avatarId: true,
       },
-      select: { id: true, email: true, fullName: true, role: true },
     });
+
+    if (!user) {
+      user = await this.prisma.user.create({
+        data: {
+          email,
+          fullName: params.fullName,
+          passwordHash,
+          emailVerified: true,
+          emailVerifiedAt: new Date(),
+        },
+        select: {
+          id: true,
+          email: true,
+          fullName: true,
+          role: true,
+          avatarId: true,
+        },
+      });
+    } else {
+      const needUpdate: Prisma.UserUpdateInput = {
+        emailVerified: true,
+        emailVerifiedAt: new Date(),
+      };
+      if (!user.fullName && params.fullName) {
+        needUpdate.fullName = params.fullName;
+      }
+      user = await this.prisma.user.update({
+        where: { email },
+        data: needUpdate,
+        select: {
+          id: true,
+          email: true,
+          fullName: true,
+          role: true,
+          avatarId: true,
+        },
+      });
+    }
+
+    // Nếu có avatarUrl từ Google -> dùng thẳng, lưu vào ImageAsset “external”
+    if (params.avatarUrl) {
+      const secure = this.normalizeGoogleAvatarUrl(params.avatarUrl);
+
+      // publicId ổn định dựa vào provider + providerId
+      const externalPublicId = `external:${params.provider}:${params.providerId}`;
+
+      const image = await this.prisma.imageAsset.upsert({
+        where: { publicId: externalPublicId },
+        update: {
+          url: secure, // có thể set bằng secure luôn
+          secureUrl: secure,
+          format: 'external', // đánh dấu nguồn ngoài
+          folder: 'external/google',
+          metadata: {
+            provider: params.provider,
+            providerId: params.providerId,
+            source: 'google-profile',
+            originalUrl: params.avatarUrl,
+            storedAt: new Date().toISOString(),
+          },
+        },
+        create: {
+          publicId: externalPublicId,
+          url: secure,
+          secureUrl: secure,
+          format: 'external',
+          folder: 'external/google',
+          metadata: {
+            provider: params.provider,
+            providerId: params.providerId,
+            source: 'google-profile',
+            originalUrl: params.avatarUrl,
+            storedAt: new Date().toISOString(),
+          },
+        },
+        select: { id: true },
+      });
+
+      // Gán avatarId cho user (nếu khác hiện tại)
+      if (user.avatarId !== image.id) {
+        user = await this.prisma.user.update({
+          where: { id: user.id },
+          data: { avatarId: image.id },
+          select: {
+            id: true,
+            email: true,
+            fullName: true,
+            role: true,
+            avatarId: true,
+          },
+        });
+      }
+    }
 
     const tokens = await this.signTokens(user.id, user.email, user.role);
     return { user, ...tokens };
@@ -312,5 +422,28 @@ export class AuthService {
     } catch (err) {
       throw new UnauthorizedException('Invalid or expired refresh token');
     }
+  }
+
+  async me(userId: string) {
+    return this.prisma.user.findUnique({
+      where: { id: userId },
+      select: {
+        id: true,
+        email: true,
+        fullName: true,
+        role: true,
+        avatar: {
+          select: {
+            id: true,
+            publicId: true,
+            secureUrl: true,
+            url: true,
+            alt: true,
+            width: true,
+            height: true,
+          },
+        },
+      },
+    });
   }
 }

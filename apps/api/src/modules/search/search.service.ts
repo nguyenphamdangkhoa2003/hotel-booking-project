@@ -10,9 +10,18 @@ export class SearchService {
     const index = this.meili.getHotelsIndex();
 
     const {
-      q, city, country, locationId, amenities,
-      starsMin, starsMax, priceMin, priceMax,
-      sort, page = 1, limit = 20,
+      q,
+      city,
+      country,
+      locationId,
+      amenities,
+      starsMin,
+      starsMax,
+      priceMin,
+      priceMax,
+      sort,
+      page = 1,
+      limit = 20,
     } = dto;
 
     // Meili filters: dùng mảng string, mỗi string là 1 nhóm AND
@@ -27,7 +36,9 @@ export class SearchService {
     if (amenities?.length) {
       // amenities là text[] → lọc phần tử giao nhau
       // Meili gợi ý cú pháp: amenities IN ["wifi","pool"]
-      filters.push(`amenities IN [${amenities.map(a => `"${a}"`).join(',')}]`);
+      filters.push(
+        `amenities IN [${amenities.map((a) => `"${a}"`).join(',')}]`,
+      );
     }
 
     const sortOpt = sort ? [sort] : undefined;
@@ -39,8 +50,19 @@ export class SearchService {
       limit,
       offset,
       attributesToRetrieve: [
-        'id','name','address','city','country','stars',
-        'latitude','longitude','amenities','priceFrom','priceTo','locationId','thumbnailUrl'
+        'id',
+        'name',
+        'address',
+        'city',
+        'country',
+        'stars',
+        'latitude',
+        'longitude',
+        'amenities',
+        'priceFrom',
+        'priceTo',
+        'locationId',
+        'thumbnailUrl',
       ],
     });
 
@@ -50,7 +72,10 @@ export class SearchService {
         page,
         limit,
         total: res.estimatedTotalHits ?? res.hits.length,
-        totalPages: Math.max(1, Math.ceil((res.estimatedTotalHits ?? 0) / limit)),
+        totalPages: Math.max(
+          1,
+          Math.ceil((res.estimatedTotalHits ?? 0) / limit),
+        ),
         processingTimeMs: res.processingTimeMs,
         query: q ?? '',
       },

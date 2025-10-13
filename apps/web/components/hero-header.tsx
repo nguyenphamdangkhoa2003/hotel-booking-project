@@ -34,7 +34,7 @@ export const HeroHeader = () => {
     const profileData = {
         name: user?.name || user?.email?.split('@')[0] || 'User',
         email: user?.email || '',
-        avatar: user?.avatarUrl || avtTempSrc, // đổi theo field của bạn
+        avatar: user?.avatar?.url || user?.avatar?.secureUrl || avtTempSrc, // đổi theo field của bạn
         model: undefined, // nếu có, bạn truyền vào
     };
     return (

@@ -17,6 +17,12 @@ export class GoogleStrategy extends PassportStrategy(Strategy, 'google') {
     const email = profile.emails?.[0]?.value;
     const fullName = profile.displayName;
     // Trả về payload để gắn vào req.user (guard sẽ nhận)
-    return { provider: 'google', email, fullName, providerId: profile.id };
+    return {
+      provider: 'google',
+      email,
+      fullName,
+      providerId: profile.id,
+      avatarUrl: profile.photos?.[0]?.value,
+    };
   }
 }
